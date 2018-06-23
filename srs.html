@@ -68,6 +68,16 @@
 		</ul>
 	</li>
 	
+	<li><a href="#Other Nonfunctional Requirements">5 Other Nonfunctional Requirements</a>
+		<ul>
+		    <li><a href="#Performance Requirement">5.1 Performance Requirement</a></li>
+		    <li><a href="#Safety Requirements">5.2 Safety Requirements</a></li>
+		    <li><a href="#Security Requirements">5.3 Security Requirements</a></li>
+			<li><a href="#Software Quality Attributes">5.4 Software Quality Attributes</a></li>
+			<li><a href="#Business Rules">5.5 Business Rules</a></li>
+		</ul>
+	</li>
+	
 </ul>
 </div>
 <head>
@@ -185,4 +195,36 @@ For all of the readers the Introduction section is very important. Because every
 <h3 id= "Communications Interfaces">3.4 Communications Interfaces</h3>
 <p>A user friendly and simple interface, this project will support majority of web browsers including the popular ones, Google Chrome, Mozilla Firefox and Safari.</p>
 </body>
+
+<head>
+	<title>SRS</title>
+</head>
+<body>
+<h2 id="Other Nonfunctional Requirements">5.Other Non-functional Requirements</h2>
+<p>Here, we specify some non-functional constraints that the website satisfies in order to be more concrete and stable.</p>
+<h3 id="Performance Requirement">5.1 Performance Requirements</h3>
+<p>Registration: 
+The website will require teachers and students to register online. They will have to submit certain credentials and will be verified once confirmed. Similar verification will be done when a student is assigned to a certain class.
+</p>
+<p>Information: 
+Student information from registration will be forwarded to the teacher and admin.
+</p>
+<p>Live Class: 
+Online Class interaction timing will depend on the internet connectivity and the speed. Probable chances of buffer/delay if internet speed is detected comparatively slower than usual.
+</p>
+<h3 id="Safety Requirements">5.2 Safety Requirements</h3>
+<p>In case of a server breakdown, the last checkpoint will be saved automatically.</p>
+<h3 id="Security Requirements">5.3 Security Requirements</h3>
+<p>Every user of the website must log in in order to take part, and actions of the students will be monitored by the teacher. The files shared by the teacher must be limited to the viewer. Only students will be allowed to view the homeworks and assignments provided by the teacher. However, if the student posts his/her query in the QA platform, everyone will be able to view the post and take necessary measure. In that case, only teachers will be allowed to make any change to that post.</p>
+<h3 id= "Software Quality Attributes">5.4 Software Quality Attributes</h3>
+<p>We will use PHP in order to avoid our website from crashing. While as, WordPress and Laravel framework will help us make the project an industry-standard website.</p>
+<h3 id="Business Rules">5.5	 Business Rules</h3>
+<ul>
+	<li>Students cannot change his/her grades/standings/attendance.</li>
+	<li>Student won’t be able to change the assignment/homework once submitted</li>
+	<li>Students cannot share files in-between themselves</li>
+	<li>Teacher-student confidentiality can be kept.</li>
+</ul>
+</body>
+
 </html>
