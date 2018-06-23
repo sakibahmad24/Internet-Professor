@@ -114,46 +114,51 @@ For all of the readers the Introduction section is very important. Because every
 
 <body>
 <h2 id="Overall Description"> 2. Overall Description</h2>
-<p>This section is a complete overview of the entire system. +This section is about the functionalities, dependencies, constrains, assumptions of the product. It also describe the various user classes that we assume will use this product, how the system interacts with the user. </p>
+
 <h3 id="Product Perspective"> 2.1 Product Perspective</h3>
-<p>Online Teaching Assistant (Online TA) system is a web based application designed to minimize the amount of time required for data management and operation on the system. This product is a new self contend product. This system should be able to find a route using user criteria. User can login to his or her account and see what they are looking for. The system will show the grades, the regular attendance, and Q/A sections. Assignments topic also can be posted and receive. There?ll be the option for live classes.</p>
+<p>Online Teaching Assistant (Online TA) system is a web based application designed to minimize the amount of time required for data management and operation on the system. This product is a new self contend product. This system should be able to find a route using user criteria. User can login to his or her account and see what they are looking for. The system will show the grades, the regular attendance, and Q/A sections. Assignments topic also can be posted and receive. There will be the option for live classes.</p>
 <h3 id="Product Functions">2.2 Product Functions</h3>
 <p>The system comprises of 2 major modules with their sub-modules as follows:</p>
 <h3>Teacher:</h3>
 <ul>
-	<li>Teacher will login on his personal account. They will create Classes, name of the Classes, Add Image</li>
-	<li>Teacher will post assignments and can check them</li>
-	<li>Teacher can take online video classes</li>
-	<li>Teachers will take regular attendance and take participate in Q/A box.</li>
+  <li>Teachers will be able to login on their personal accounts. They will create Classes, name of the Classes, can add related resources</li>
+  <li>Teachers can post different notice & announcements</li>
+  <li>Teachers can post assignments and can check submissions</li>
+  <li>Teachers can take online video classes</li>
+  <li>Teachers will be able to take regular attendance and take participate in Q/A box.</li>
+  <li>They can schedule exams on calender</li>
+  <li>Teachers can post marks of different students and can grade them online</li>
+  <li>Teachers will be able to share study materials</li>
 </ul>
 <h3>Student:</h3>
 <ul>
-	<li>Student can register his personal detail, and login his/her account.</li>
-	<li>After login student will be able to view the Q/A box, attendance.</li>
-	<li>Student will check the due assignments and they can submit the attendance.</li>
-	<li>Student will apply for late submission.</li>
-	<li>Student will participate in online class. </li>
-	<li>For the mobile applications we?ll add pre-class notification for student.</li>
-	<li>For mobile application student can check the exam dates. </li>
-	<li>For mobile application, student will get a welcome to the class message after each login.</li>
+  <li>Students can register his personal detail, and login his/her account.</li>
+  <li>After login student will be able to view the ask question box and they can check attendance.</li>
+  <li>Students will be able to check the due assignments and they can submit.</li>
+  <li>Students can apply for late submission.</li>
+  <li>Students can participate in online class. </li>
+  <li>Students can check exam dates and upcoming events on calender</li>
+  <li>Students will be able to see their current standing on each class. They can check their grades and marks</li>
 </ul>
 <h3 id= "User Classes and Characteristics"> 2.3 User Classes and Characteristics</h3>
-<p>There will be 2types of users Admin and general users</p>
+<p>There will be 2 types of users Admin and general user</p>
 <h3>Admin</h3>
-<p>It can pretty much do everything. Admin can login to his/ her account; they can add data, delete data or edit data based on the requirement. The admins can manage/modify information. They can see the user details, student feedback. Admins can logout from his account. </p>
-<h3>User </h3>
-<p>General users can use both the website and mobile app. They will have an account. Users can search, view, ask/reply questions in Q/A bar, take attendance and Take/attend online classes. They can?t change anything of the system. After login they will search according to their need, and the system will provide information.</p>
-<p>The system is mainly for the Teachers and students. Teachers and students can use this website for information about the courses, assignments, attendance, marks that they are searching for. They can get all the information in details information. It can be helpful for other users too; those who wants to know the course .But the most important users are the teachers and students.</p>
+<p>He/She can pretty much do everything. Admin can login to his/ her account; they can add data, delete data or edit data based on the requirement. The admins can manage/modify information. They can see the user details, can define who is teacher and who is student. They can add, remove or block an account remotely</p>
+<h3>User</h3>
+<p>General users are mainly Teachers and Students. They can do their specified actions specified in <strong>Section 2.2.</strong></p>
 <h3>2.4 Operating Environment</h3>
 <ul>
-	<li>Operating environment is as listed below.</li>
-	<li>Distributed database</li>
-	<li>Client/server system </li>
-	<li>Operating system: Windows, however, it will be a website, so will be able to run on any operating system</li>
-	<li>Database: MYSQL database </li>
-	<li>Platform: JavaScript, PHP</li>
+  <li>Operating environment is as listed below.
+    <ul>
+      <li>Distributed database</li>
+      <li>Client/server system </li>
+      <li>Operating system: Any, it will be a web based application, so will be able to run on any operating system</li>
+      <li>Database: MYSQL database </li>
+      <li>Platform: PHP, JavaScript, JQuery</li>
+    </ul>
+    </li>
 </ul>
-<h3 id= "Design and Implementation Constraints">2.5	Design and Implementation Constraints</h3>
+<h3 id= "Design and Implementation Constraints">2.5 Design and Implementation Constraints</h3>
 <p>User should have internet connection. Without an internet connection, the users cannot log in to the system. So, they cannot interact with the system without internet.</p>
 <p>Another constraint is data capacity. As we are not using our own data center, we are might face issue with capacity.</p>
 
