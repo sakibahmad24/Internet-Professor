@@ -18,20 +18,20 @@
   
   </tr>
   <tr>
-    <td>Abu Mahdi</td>
-    <td>151....</td> 
+    <td>Mohammed Abu-Al Mahadi</td>
+    <td>1510350642</td> 
   </tr>
   <tr>
     <td>Muhammad Sakib Khan</td>
     <td>1520016042</td> 
   </tr>
   <tr>
-    <td>Redowan Amin</td>
-    <td>142...</td> 
+    <td>Md Redowan Amin Mollick </td>
+    <td>1420017042</td> 
   </tr>
   <tr>
-    <td>Nahid</td>
-    <td>152....</td> 
+    <td>Faysal Mahmud Nahid</td>
+    <td>1521387042</td> 
   </tr>
 </table>
 <head><b><h3>23rd June, 2018</b></h3></head>
@@ -48,6 +48,26 @@
 			<li><a href="#References">1.5 Refences</a> </li>  
 		</ul>
 	</li>
+	<li><a href="#Overall Description">2 Overall Description</a>
+		<ul>
+		    <li><a href="#Product Perspective">2.1 Product Perspective</a></li>
+		    <li><a href="#Product Functions">2.2 Product Functions</a></li>
+		    <li><a href="#User Classes and Characteristics">2.3 User Classes and Characteristics</a></li>
+			<li><a href="#Operating Environment">2.4 Operating Environment</a></li>
+			<li><a href="#Design and Implementation Constraints">2.5 Design and Implementation Constraints</a> </li>  
+			<li><a href="#User Documentation">2.6 User Documentation</a> </li>
+			<li><a href="#Assumptions and Dependencies">2.7 Assumptions and Dependencies</a> </li>
+		</ul>
+	</li>
+	<li><a href="#External Interface Requirements">3 External Interface Requirements</a>
+		<ul>
+		    <li><a href="#User Interfaces">3.1 User Interfaces</a></li>
+		    <li><a href="#Hardware Interfaces">3.2 Hardware Interfaces</a></li>
+		    <li><a href="#Software Interfaces">3.3 Software Interfaces</a></li>
+			<li><a href="#Communications Interfaces">3.4 Communications Interfaces</a></li>
+		</ul>
+	</li>
+	
 </ul>
 </div>
 <head>
@@ -83,11 +103,11 @@ For all of the readers the Introduction section is very important. Because every
 
 
 <body>
-<h2>2. Overall Description</h2>
+<h2 id="Overall Description"> 2. Overall Description</h2>
 <p>This section is a complete overview of the entire system. +This section is about the functionalities, dependencies, constrains, assumptions of the product. It also describe the various user classes that we assume will use this product, how the system interacts with the user. </p>
-<h3>2.1	 Product Perspective</h3>
+<h3 id="Product Perspective"> 2.1 Product Perspective</h3>
 <p>Online Teaching Assistant (Online TA) system is a web based application designed to minimize the amount of time required for data management and operation on the system. This product is a new self contend product. This system should be able to find a route using user criteria. User can login to his or her account and see what they are looking for. The system will show the grades, the regular attendance, and Q/A sections. Assignments topic also can be posted and receive. There?ll be the option for live classes.</p>
-<h3>2.2 Product Functions</h3>
+<h3 id="Product Functions">2.2 Product Functions</h3>
 <p>The system comprises of 2 major modules with their sub-modules as follows:</p>
 <h3>Teacher:</h3>
 <ul>
@@ -107,7 +127,7 @@ For all of the readers the Introduction section is very important. Because every
 	<li>For mobile application student can check the exam dates. </li>
 	<li>For mobile application, student will get a welcome to the class message after each login.</li>
 </ul>
-<h3>2.3	User Classes and Characteristics</h3>
+<h3 id= "User Classes and Characteristics"> 2.3 User Classes and Characteristics</h3>
 <p>There will be 2types of users Admin and general users</p>
 <h3>Admin</h3>
 <p>It can pretty much do everything. Admin can login to his/ her account; they can add data, delete data or edit data based on the requirement. The admins can manage/modify information. They can see the user details, student feedback. Admins can logout from his account. </p>
@@ -123,27 +143,27 @@ For all of the readers the Introduction section is very important. Because every
 	<li>Database: MYSQL database </li>
 	<li>Platform: JavaScript, PHP</li>
 </ul>
-<h3>2.5	  Design and Implementation Constraints</h3>
+<h3 id= "Design and Implementation Constraints">2.5	Design and Implementation Constraints</h3>
 <p>User should have internet connection. Without an internet connection, the users cannot log in to the system. So, they cannot interact with the system without internet.</p>
 <p>Another constraint is data capacity. As we are not using our own data center, we are might face issue with capacity.</p>
 
-<h3>2.6	  User Documentation</h3>
+<h3 id= "User Documentation">2.6 User Documentation</h3>
 <p>The system will provide a user manual along with the software and there will be a disk which contains video tutorial.</p>
-<h3>2.7	  Assumptions and Dependencies</h3>
+<h3 id= "Assumptions and Dependencies">2.7 Assumptions and Dependencies</h3>
 <p>User interface and some functionalities can change during the development process of project. And also new functionalities can be added which is able to change the dependent system requirements.</p>
 <p>If the phone does not have enough hardware resources available for the application, for example, the users might have allocated them with other applications; there may be scenarios where the application does not work as intended or even at all.</p>
 </body>
 
 
-<h2>3. External Interface Requirements</h2>
-<h3>3.1 User Interfaces </h3>
+<h2 id= "External Interface Requirements">3.External Interface Requirements</h2>
+<h3 id= "User Interfaces">3.1 User Interfaces </h3>
 <p>The website will have a straightforward and a clean look which easy to navigate. At first sight, a user will feel everything in the website is well organized and easy to explore. There will be two separate User Interfaces. One for the teacher while other for the student.</p>
 <p>There will be graphical user interface (GUI) which will allow the users to provide feedback. The teachers can post grades here on real time and system will make a statistical standing and keep it updated. Errors will be displayed if user give wrong inputs.  There will also be a help button which when the user presses will show information to the user about the page content and this button will appear on every page. </p>
 <p>Front end Software: HTML, CSS and WordPress</p>
 <p>Back end Software: PHP, Laravel Framework & MySQL</p>
-<h3>3.2 Hardware Interfaces</h3>
+<h3 id = "Hardware Interfaces">3.2 Hardware Interfaces</h3>
 <p>Any Device that is able to run a web browser which has the ability to process above mentioned Front end software and also the device has to meet the requirements of the browser to run without lagging. </p>
-<h3>3.3	Software Interfaces</h3>
+<h3 id= "Software Interfaces">3.3 Software Interfaces</h3>
 <p>Mentioned below are the software required for the website:</p>
 <table style="width:100%; text-align: left;">
   <tr>
@@ -162,7 +182,7 @@ For all of the readers the Introduction section is very important. Because every
     <td>To save records including classes, student?s results, attendance, etc. </td>
   </tr>
 </table>
-<h3>3.4	Communications Interfaces</h3>
+<h3 id= "Communications Interfaces">3.4 Communications Interfaces</h3>
 <p>A user friendly and simple interface, this project will support majority of web browsers including the popular ones, Google Chrome, Mozilla Firefox and Safari.</p>
 </body>
 </html>
