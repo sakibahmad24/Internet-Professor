@@ -1,9 +1,105 @@
 <!DOCTYPE html>
 <html>
+
+<head><b><h1>System Design Specification</b></h1></head>
+<head><b><h2>for</b></h2></head>
+<head><b><h1>IntProf</b></h1></head>
+
+<head><b><h3>Version 1.0 approved</b></h3></head>
+<head><b><h3>Prepared By: </b></h3></head>
+<table style="width:100%; text-align: left;">
+  <tr>
+    <th>Name</th>
+    <th>ID</th> 
+  </tr>
+  <tr>
+    <td>Kazi Sakib Ahmad</td>
+    <td> 1510702042</td> 
+  
+  </tr>
+  <tr>
+    <td>Mohammed Abu-Al Mahadi</td>
+    <td>1510350642</td> 
+  </tr>
+  <tr>
+    <td>Muhammad Sakib Khan</td>
+    <td>1520016042</td> 
+  </tr>
+  <tr>
+    <td>Md Redowan Amin Mollick </td>
+    <td>1420017042</td> 
+  </tr>
+  <tr>
+    <td>Faysal Mahmud Nahid</td>
+    <td>1521387042</td> 
+  </tr>
+</table>
+<head><b><h3>6th July, 2018</b></h3></head>
+
+<div>
+<p><h1>Table of Contents</h1></p>
+<ul>
+	<li><a href="#Introduction">1 Introduction</a>
+		
+	</li>
+	<li><a href="# Architectural Design">2 Architectural Design</a>
+		
+	</li>
+	<li><a href="#Component Design">3 Component Design</a></li>
+
+	<li><a href="#Class Diagram">4 Class Diagram</a></li>
+	<li><a href="#Class Description/Details">5 Class Description/Details</a></li>
+	<li><a href="#Database Design">6 Database Design</a></li>
+	<li><a href="#API Listing and Details">7 API Listing and Details</a></li>
+</ul>
+</div>
+
 <head>
-	<title>SOFTWARE DESIGN SPECIFICATION</title>
+	<title>Software Requirements Specification</title>
 </head>
 <body>
+<h2 id="Introduction">1.Introduction</h2>
 
+<h2 id=" Architectural Design"> 2. Architectural Design</h2>
+
+
+<h2 id= "Component Design">3.Component Design</h2>
+<h3> 3.1 Website consists of many components. Components are related and depended to each other. An overall description of these components are given below: </h3>
+<h3> Website</h3>
+<p>In our class diagram Website is the main class. The whole class diagram is based on our website class. There is a class of web user on which our main class Website is depended. For any sort of transaction users will have to go to the website. Then they will be able to check or post. So this is why website main class is depended upon web users, teacher and students. </p>
+<h3> Teacher</h3>
+<p>The Techer class is one of the primary users of the website. The main class Website is depended in a relation of 1 to many with other classes. This is because Without Web user -Teacher, the website will not be useful or utilized. </p>
+<h3> Students</h3>
+<p>Students are dependent on the Teacher for being able to use the website. Student class is related with the other classes. This is because Students will make will/can use the features of the website so that an analysis of their work can be at the end be graded. The relation between them is 1 to many.  </p>
+<h3> Sign Up</h3>
+<p>Users, teachers and students, must sign up to the website in order to use it. Credentials including Username and Password must be given along with CID, TID and SID. </p>
+<h3> Sign In</h3>
+<p>Teacher and Student class will have to pass this in order to access website features. </p>
+<h3> Live Video Classroom</h3>
+<p>Teacher sets the date for the video class. Cid is used to schedule it. As a result of using CID, the TID and SID are also obtained. Live video class have VID and VNAME.</p>
+<h3> Q&A Platform</h3>
+<p>Teacher and Students posts here against their TID or SID and each question has a QID.</p>
+<h3> Posting & Submitting Assignments</h3>
+<p>Teacher posts Assignments each having an AID and ANAME. Students submit assignment against the AID and SID. </p>
+<h3> Posting Grades</h3>
+<p>At the end of term/semester, Grades are automatically generated based on performance with the teacher having the function to scale the grades against students’ SID. </p>
+<h3> Live Standing</h3>
+<p>This section updates automatically after each assignment submission, live video class and attendance and shows a statistical view against the SID of the students.</p>
+<h3> Online Attendance</h3>
+<p>The teacher can insert the attendance for students and also automatic attendance occurs as students join live class. Attendance occurs against SID and CID for a classroom.</p>
+<h3> Voice Search</h3>
+<p>Done using Artificial Intelligence as search is done by user’s voice commands. TID or SID of the user is kept for who is searching what.</p>
+<h5>Open-Closed Principle (OCP) – class should be open for extension but closed for modification will be the class based Principle used for this website.</h5>
 </body>
+
+
+<h2 id="Class Diagram">4. Class Diagram</h2>
+
+<h2 id="Class Description/Details">5.Class Description/Details</h2>
+
+<h2 id="Database Design">6. Database Design</h2>
+
+<h2 id="API Listing and Details">7. API Listing and Details</h2>
+
+
 </html>
