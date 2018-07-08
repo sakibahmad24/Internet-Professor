@@ -106,6 +106,2764 @@
 <h2 id="Class Description/Details">5.Class Description/Details</h2>
 
 <h2 id="Database Design">6. Database Design</h2>
+<strong>All the database tables as part of database designing are mentioned below:</strong>
+<p>
+    <strong>Database: Student –Teacher Administration</strong>
+</p>
+<p>
+    Table: admin
+</p>
+<table border="1" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td width="102" valign="top">
+                <p align="center">
+                    <strong>Field</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p align="center">
+                    <strong>Type</strong>
+                </p>
+            </td>
+            <td width="96" valign="top">
+                <p align="center">
+                    <strong>Null</strong>
+                </p>
+            </td>
+            <td width="99" valign="top">
+                <p align="center">
+                    <strong>Key</strong>
+                </p>
+            </td>
+            <td width="94" valign="top">
+                <p align="center">
+                    <strong>Default</strong>
+                </p>
+            </td>
+            <td width="115" valign="top">
+                <p align="center">
+                    <strong>Extra</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="102" valign="top">
+                <p>
+                    <strong>id</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    int(10)unassigned
+                </p>
+            </td>
+            <td width="96" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="99" valign="top">
+                <p>
+                    Primary
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="115" valign="top">
+                <p>
+                    Auto_increment
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="102" valign="top">
+                <p>
+                    <strong>Name</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="96" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="99" valign="top">
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="102" valign="top">
+                <p>
+                    <strong>email</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="96" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="99" valign="top">
+                <p>
+                    Unique
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="102" valign="top">
+                <p>
+                    <strong>password</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="96" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="99" valign="top">
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="102" valign="top">
+                <p>
+                    <strong>Image</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="96" valign="top">
+                <p>
+                    Yes
+                </p>
+            </td>
+            <td width="99" valign="top">
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="102" valign="top">
+                <p>
+                    <strong>Status</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    enum(‘0’or’1’)
+                </p>
+            </td>
+            <td width="96" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="99" valign="top">
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="102" valign="top">
+                <p>
+                    <strong>type</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="96" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="99" valign="top">
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="102" valign="top">
+                <p>
+                    <strong>created_at</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    timestamp
+                </p>
+            </td>
+            <td width="96" valign="top">
+                <p>
+                    Yes
+                </p>
+            </td>
+            <td width="99" valign="top">
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="102" valign="top">
+                <p>
+                    <strong>updated_at</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    timestamp
+                </p>
+            </td>
+            <td width="96" valign="top">
+                <p>
+                    Yes
+                </p>
+            </td>
+            <td width="99" valign="top">
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    Table: faculty
+</p>
+<table border="1" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td width="111" valign="top">
+                <p align="center">
+                    <strong>Field</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p align="center">
+                    <strong>Type</strong>
+                </p>
+            </td>
+            <td width="96" valign="top">
+                <p align="center">
+                    <strong>Null</strong>
+                </p>
+            </td>
+            <td width="99" valign="top">
+                <p align="center">
+                    <strong>Key</strong>
+                </p>
+            </td>
+            <td width="94" valign="top">
+                <p align="center">
+                    <strong>Default</strong>
+                </p>
+            </td>
+            <td width="115" valign="top">
+                <p align="center">
+                    <strong>Extra</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="111" valign="top">
+                <p>
+                    <strong>fid</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    int(10)unassigned
+                </p>
+            </td>
+            <td width="96" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="99" valign="top">
+                <p>
+                    Primary
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="115" valign="top">
+                <p>
+                    Auto_increment
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="111" valign="top">
+                <p>
+                    <strong>Name</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="96" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="99" valign="top">
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="111" valign="top">
+                <p>
+                    <strong>email</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="96" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="99" valign="top">
+                <p>
+                    Unique
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="111" valign="top">
+                <p>
+                    <strong>password</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="96" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="99" valign="top">
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="111" valign="top">
+                <p>
+                    <strong>Image</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="96" valign="top">
+                <p>
+                    Yes
+                </p>
+            </td>
+            <td width="99" valign="top">
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="111" valign="top">
+                <p>
+                    <strong>Status</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    enum(‘0’or’1’)
+                </p>
+            </td>
+            <td width="96" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="99" valign="top">
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="111" valign="top">
+                <p>
+                    <strong>type</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="96" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="99" valign="top">
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="111" valign="top">
+                <p>
+                    <strong>Phone_number</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Int(15)
+                </p>
+            </td>
+            <td width="96" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="99" valign="top">
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="111" valign="top">
+                <p>
+                    <strong>created_at</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    timestamp
+                </p>
+            </td>
+            <td width="96" valign="top">
+                <p>
+                    Yes
+                </p>
+            </td>
+            <td width="99" valign="top">
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="111" valign="top">
+                <p>
+                    <strong>updated_at</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    timestamp
+                </p>
+            </td>
+            <td width="96" valign="top">
+                <p>
+                    Yes
+                </p>
+            </td>
+            <td width="99" valign="top">
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    Table: student
+</p>
+<table border="1" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td width="118" valign="top">
+                <p align="center">
+                    <strong>Field</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p align="center">
+                    <strong>Type</strong>
+                </p>
+            </td>
+            <td width="93" valign="top">
+                <p align="center">
+                    <strong>Null</strong>
+                </p>
+            </td>
+            <td width="96" valign="top">
+                <p align="center">
+                    <strong>Key</strong>
+                </p>
+            </td>
+            <td width="92" valign="top">
+                <p align="center">
+                    <strong>Default</strong>
+                </p>
+            </td>
+            <td width="115" valign="top">
+                <p align="center">
+                    <strong>Extra</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="118" valign="top">
+                <p>
+                    <strong>sid</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    int(10)unassigned
+                </p>
+            </td>
+            <td width="93" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="96" valign="top">
+                <p>
+                    Primary
+                </p>
+            </td>
+            <td width="92" valign="top">
+            </td>
+            <td width="115" valign="top">
+                <p>
+                    Auto_increment
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="118" valign="top">
+                <p>
+                    <strong>Name</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="93" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="96" valign="top">
+            </td>
+            <td width="92" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="118" valign="top">
+                <p>
+                    <strong>email</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="93" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="96" valign="top">
+                <p>
+                    Unique
+                </p>
+            </td>
+            <td width="92" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="118" valign="top">
+                <p>
+                    <strong>password</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="93" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="96" valign="top">
+            </td>
+            <td width="92" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="118" valign="top">
+                <p>
+                    <strong>phone_number</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    int(13)
+                </p>
+            </td>
+            <td width="93" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="96" valign="top">
+            </td>
+            <td width="92" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="118" valign="top">
+                <p>
+                    <strong>parents_number</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Int(13)
+                </p>
+            </td>
+            <td width="93" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="96" valign="top">
+            </td>
+            <td width="92" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="118" valign="top">
+                <p>
+                    <strong>courses</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="93" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="96" valign="top">
+            </td>
+            <td width="92" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="118" valign="top">
+                <p>
+                    <strong>Image</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="93" valign="top">
+                <p>
+                    Yes
+                </p>
+            </td>
+            <td width="96" valign="top">
+            </td>
+            <td width="92" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="118" valign="top">
+                <p>
+                    <strong>Status</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    enum(‘0’or’1’)
+                </p>
+            </td>
+            <td width="93" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="96" valign="top">
+            </td>
+            <td width="92" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="118" valign="top">
+                <p>
+                    <strong>type</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="93" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="96" valign="top">
+            </td>
+            <td width="92" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="118" valign="top">
+                <p>
+                    <strong>department</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="93" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="96" valign="top">
+            </td>
+            <td width="92" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="118" valign="top">
+                <p>
+                    <strong>created_at</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    timestamp
+                </p>
+            </td>
+            <td width="93" valign="top">
+                <p>
+                    Yes
+                </p>
+            </td>
+            <td width="96" valign="top">
+            </td>
+            <td width="92" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="118" valign="top">
+                <p>
+                    <strong>updated_at</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    timestamp
+                </p>
+            </td>
+            <td width="93" valign="top">
+                <p>
+                    Yes
+                </p>
+            </td>
+            <td width="96" valign="top">
+            </td>
+            <td width="92" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    Table: attendance
+</p>
+<table border="1" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td width="116" valign="top">
+                <p align="center">
+                    <strong>Field</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p align="center">
+                    <strong>Type</strong>
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p align="center">
+                    <strong>Null</strong>
+                </p>
+            </td>
+            <td width="94" valign="top">
+                <p align="center">
+                    <strong>Key</strong>
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p align="center">
+                    <strong>Default</strong>
+                </p>
+            </td>
+            <td width="115" valign="top">
+                <p align="center">
+                    <strong>Extra</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>date</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    DATE
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+                <p>
+                    Primary
+                </p>
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>aid</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    int(10)unassigned
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+                <p>
+                    Primary
+                </p>
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+                <p>
+                    Auto_increment
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>takesid</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    int(10)unassigned
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+                <p>
+                    Auto_increment
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>Status</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    enum(‘0’or’1’)
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>remarks</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    Yes
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>courses</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    Table: courses
+</p>
+<table border="1" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td width="116" valign="top">
+                <p align="center">
+                    <strong>Field</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p align="center">
+                    <strong>Type</strong>
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p align="center">
+                    <strong>Null</strong>
+                </p>
+            </td>
+            <td width="94" valign="top">
+                <p align="center">
+                    <strong>Key</strong>
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p align="center">
+                    <strong>Default</strong>
+                </p>
+            </td>
+            <td width="115" valign="top">
+                <p align="center">
+                    <strong>Extra</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>cid</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    int(10)unassigned
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+                <p>
+                    Primary
+                </p>
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+                <p>
+                    Auto_increment
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>takesid</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    int(10)unassigned
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+                <p>
+                    Auto_increment
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>cName</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>courses</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>type</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>department</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>created_at</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    timestamp
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    Yes
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>updated_at</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    timestamp
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    Yes
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    Table: grades
+</p>
+<table border="1" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td width="118" valign="top">
+                <p align="center">
+                    <strong>Field</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p align="center">
+                    <strong>Type</strong>
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p align="center">
+                    <strong>Null</strong>
+                </p>
+            </td>
+            <td width="94" valign="top">
+                <p align="center">
+                    <strong>Key</strong>
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p align="center">
+                    <strong>Default</strong>
+                </p>
+            </td>
+            <td width="115" valign="top">
+                <p align="center">
+                    <strong>Extra</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="118" valign="top">
+                <p>
+                    <strong>grade_id</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    int(10)unassigned
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+                <p>
+                    Primary
+                </p>
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+                <p>
+                    Auto_increment
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="118" valign="top">
+                <p>
+                    <strong>grade_range</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="118" valign="top">
+                <p>
+                    <strong>grade_name</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="118" valign="top">
+                <p>
+                    <strong>phone_number</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    int(13)
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="118" valign="top">
+                <p>
+                    <strong>parents_number</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Int(13)
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="118" valign="top">
+                <p>
+                    <strong>courses</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="118" valign="top">
+                <p>
+                    <strong>department</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    Table: live classes
+</p>
+<table border="1" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td width="116" valign="top">
+                <p align="center">
+                    <strong>Field</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p align="center">
+                    <strong>Type</strong>
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p align="center">
+                    <strong>Null</strong>
+                </p>
+            </td>
+            <td width="94" valign="top">
+                <p align="center">
+                    <strong>Key</strong>
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p align="center">
+                    <strong>Default</strong>
+                </p>
+            </td>
+            <td width="115" valign="top">
+                <p align="center">
+                    <strong>Extra</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>lid</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    int(10)unassigned
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+                <p>
+                    Primary
+                </p>
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+                <p>
+                    Auto_increment
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>lName</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>access</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>Status</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    enum(‘0’or’1’)
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>type</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>department</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>created_at</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    timestamp
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    Yes
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>updated_at</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    timestamp
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    Yes
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    Table: Q/A forum
+</p>
+<table border="1" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td width="116" valign="top">
+                <p align="center">
+                    <strong>Field</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p align="center">
+                    <strong>Type</strong>
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p align="center">
+                    <strong>Null</strong>
+                </p>
+            </td>
+            <td width="94" valign="top">
+                <p align="center">
+                    <strong>Key</strong>
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p align="center">
+                    <strong>Default</strong>
+                </p>
+            </td>
+            <td width="115" valign="top">
+                <p align="center">
+                    <strong>Extra</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>qid</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    int(10)unassigned
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+                <p>
+                    Primary
+                </p>
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+                <p>
+                    Auto_increment
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>qName</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>answer</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    Yes
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>department</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>created_at</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    timestamp
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    Yes
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>updated_at</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    timestamp
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    Yes
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>edited_at</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    timestamp
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    yes
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    Table: assignment
+</p>
+<table border="1" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td width="116" valign="top">
+                <p align="center">
+                    <strong>Field</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p align="center">
+                    <strong>Type</strong>
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p align="center">
+                    <strong>Null</strong>
+                </p>
+            </td>
+            <td width="94" valign="top">
+                <p align="center">
+                    <strong>Key</strong>
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p align="center">
+                    <strong>Default</strong>
+                </p>
+            </td>
+            <td width="115" valign="top">
+                <p align="center">
+                    <strong>Extra</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>as_id</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    int(10)unassigned
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+                <p>
+                    Primary
+                </p>
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+                <p>
+                    Auto_increment
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>as_Name</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>courses</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>Status</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    enum(‘0’or’1’)
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>type</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>department</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>created_at</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    timestamp
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    Yes
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>updated_at</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    timestamp
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    Yes
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    Table: department
+</p>
+<table border="1" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td width="116" valign="top">
+                <p align="center">
+                    <strong>Field</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p align="center">
+                    <strong>Type</strong>
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p align="center">
+                    <strong>Null</strong>
+                </p>
+            </td>
+            <td width="94" valign="top">
+                <p align="center">
+                    <strong>Key</strong>
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p align="center">
+                    <strong>Default</strong>
+                </p>
+            </td>
+            <td width="115" valign="top">
+                <p align="center">
+                    <strong>Extra</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>did</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    int(10)unassigned
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+                <p>
+                    Primary
+                </p>
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+                <p>
+                    Auto_increment
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>dName</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>courses</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>type</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    Varchar(191)
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>created_at</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    timestamp
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    Yes
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>updated_at</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    timestamp
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    Yes
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    Table: takes
+</p>
+<table border="1" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td width="116" valign="top">
+                <p align="center">
+                    <strong>Field</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p align="center">
+                    <strong>Type</strong>
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p align="center">
+                    <strong>Null</strong>
+                </p>
+            </td>
+            <td width="94" valign="top">
+                <p align="center">
+                    <strong>Key</strong>
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p align="center">
+                    <strong>Default</strong>
+                </p>
+            </td>
+            <td width="115" valign="top">
+                <p align="center">
+                    <strong>Extra</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>takesid</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    int(10)unassigned
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+                <p>
+                    Primary
+                </p>
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+                <p>
+                    Auto_increment
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>sid</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    int(10)
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+                <p>
+                    Auto_increment
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>cid</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    int(10)
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+                <p>
+                    Auto_increment
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>tdate</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    date
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    Table: teaches
+</p>
+<table border="1" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td width="116" valign="top">
+                <p align="center">
+                    <strong>Field</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p align="center">
+                    <strong>Type</strong>
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p align="center">
+                    <strong>Null</strong>
+                </p>
+            </td>
+            <td width="94" valign="top">
+                <p align="center">
+                    <strong>Key</strong>
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p align="center">
+                    <strong>Default</strong>
+                </p>
+            </td>
+            <td width="115" valign="top">
+                <p align="center">
+                    <strong>Extra</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>fid</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    int(10)unassigned
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+                <p>
+                    Primary
+                </p>
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+                <p>
+                    Auto_increment
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>sid</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    int(10)
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+                <p>
+                    Auto_increment
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>cid</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    int(10)
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+                <p>
+                    Auto_increment
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>tdate</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    date
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    Table: access
+</p>
+<table border="1" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td width="116" valign="top">
+                <p align="center">
+                    <strong>Field</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p align="center">
+                    <strong>Type</strong>
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p align="center">
+                    <strong>Null</strong>
+                </p>
+            </td>
+            <td width="94" valign="top">
+                <p align="center">
+                    <strong>Key</strong>
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p align="center">
+                    <strong>Default</strong>
+                </p>
+            </td>
+            <td width="115" valign="top">
+                <p align="center">
+                    <strong>Extra</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>userid</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    int(10)unassigned
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+                <p>
+                    Primary
+                </p>
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+                <p>
+                    Auto_increment
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>password</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    int(10)
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="116" valign="top">
+                <p>
+                    <strong>fid</strong>
+                </p>
+            </td>
+            <td width="123" valign="top">
+                <p>
+                    int(10)
+                </p>
+            </td>
+            <td width="90" valign="top">
+                <p>
+                    No
+                </p>
+            </td>
+            <td width="94" valign="top">
+            </td>
+            <td width="90" valign="top">
+            </td>
+            <td width="115" valign="top">
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 <h2 id="API Listing and Details">7. API Listing and Details</h2>
 <p>We haven't planned to use any API yet. We will update this section if we use any.</p>
