@@ -10,17 +10,17 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item active">
-                <div class="fill" style="background-image:url(<?php echo base_url('images/banner1.png')?>"></div>
+                <div class="fill" style="background-image:url(<?php echo base_url('images/banner1.jpg')?>"></div>
                 <div class="carousel-caption">
                 </div>
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url(<?php echo base_url('images/banner2.png')?>"></div>
+                <div class="fill" style="background-image:url(<?php echo base_url('images/banner2.jpg')?>"></div>
                 <div class="carousel-caption">
                 </div>
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url(<?php echo base_url('images/banner3.png')?>"></div>
+                <div class="fill" style="background-image:url(<?php echo base_url('images/banner3.jpg')?>"></div>
                 <div class="carousel-caption">
                 </div>
             </div>
@@ -72,7 +72,6 @@
                     </div>
                     <div class="panel-body">
                         <p>IntProf is designed to connect students, TAs, and professors so every student can get the help they need when they need it. Today, hundreds of thousands of students across hundreds of campuses are using IntProf for their classes</p>
-                        <a href="#" class="btn btn-default">Learn More</a>
                     </div>
                 </div>
             </div>

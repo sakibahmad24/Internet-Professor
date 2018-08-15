@@ -14,7 +14,7 @@
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+                <!--<ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="about.html">About</a>
                     </li>
@@ -23,7 +23,7 @@
                     </li>
                     <li>
                         <a href="contact.html">Contact</a>
-                    </li>
+                    </li>-->
                     
                    <?php 
                    	if( isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] == 1){?> 
