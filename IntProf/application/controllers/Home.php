@@ -28,6 +28,27 @@ class Home extends CI_Controller {
 		
 	}
 
+	/*function username_availability(){
+	    $data['view'] = "registration_view";
+	    $this->load->view('template',$data);
+    }
+
+	function check_username_availability(){
+	    if(!filter_val($_POST["username"], FILTER_VALIDATE_USERNAME)){
+	        echo '<label class="text-danger"><span class="glyphicon glyphicon-remove"></span>Invalid Username</label>';
+        }
+
+        else{
+            if ($this->common->is_username_available($_POST["username"])){
+                echo '<label class="text-danger"><span class="glyphicon glyphicon-remove"></span>Username already registered! Try Another</label>';
+            }
+            else{
+                echo '<label class="text-danger"><span class="glyphicon glyphicon-remove"></span>Username Available</label>';
+            }
+        }
+
+    }*/
+
 	public function save_registration()
 	{
 			
@@ -69,14 +90,17 @@ class Home extends CI_Controller {
 			);
 
 //	var_dump($data); die;
-			
-			if($this->common->save_registration($data)){
-				
-				$this->session->set_flashdata('conf', '<span class = "success"> Registration successfull. </span>');
+			$res = $this->common->save_registration($data);
+
+			//var_dump($res[])
+			if($res['msg'] == ""){
+                //$this->form_validation->set_rules('username', 'Username', 'required|is_unique[users.username]'); //form validation
+				$this->session->set_flashdata('conf', '<span class = "success">Registration successfull.</span>');
 				redirect(site_url());
 			}else{
-				$this->session->set_flashdata('conf', '<span class = "danger">Registration failed.</span>');
-				redirect(site_url());
+				//var_dump(); die;
+				$this->session->set_flashdata('conf', '<span class = "danger">Registration failed.'.$res["msg"].'</span>');
+				redirect(Home/registration);
 				
 			}
 			

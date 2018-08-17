@@ -14,6 +14,9 @@
     <!-- Bootstrap Core CSS -->
     <link href=<?php echo base_url("css/bootstrap.min.css") ?> rel="stylesheet">
 
+    <!-- Ajax and JQuery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <!-- Custom CSS -->
     <link href=<?php echo base_url("css/modern-business.css")?> rel="stylesheet">
 

@@ -86,6 +86,7 @@
 					<div class="col-xs-6 col-md-6">
 								<input class="form-control" name="username" placeholder="Username" type="text"
 												required autofocus />
+                                <!--<span id="usename_result"></span>-->
 					</div>
 					<div class="col-xs-6 col-md-6">
 						<input class="form-control" name="password" placeholder="Password" type="text"
@@ -109,3 +110,20 @@
 		margin-bottom: 10px;
 	}
 </style>
+
+<!--<script>
+    $(document).ready(function () {
+        $('username').change(function () {
+            var username = $('#username').val();
+            if (username != ''){
+                $.ajax("<?php echo base_url()?>Home/check_username_availability");
+                method:"POST",
+                    data:{username:username},
+                success:function(data) {
+                    $('#username_result').html(data);
+                }
+            }
+        });
+    });
+
+</script>-->
