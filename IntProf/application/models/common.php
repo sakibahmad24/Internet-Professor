@@ -35,6 +35,14 @@ $data['username'] = "amisdfgfdsgn";
 		}
 	}
 
+	public function get_user($data){
+		$this->db->from('users');
+		$this->db->where($data);
+		$query = $this->db->get();
+		return $query->result_array();
+
+	}
+
 
 		
 	}
