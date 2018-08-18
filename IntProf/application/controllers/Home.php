@@ -64,9 +64,9 @@ class Home extends CI_Controller {
 		  $year = $this->input->post('year');
 		  $birthDate = $day.$month.$year;
 		  
-		  $gender	= $this->input->post('sex');
+		  $gender	= $this->input->post('gender');
 		  $designation	= $this->input->post('designation');
-		  $userType = $this->input->post('userType');
+		  $user_type = $this->input->post('user_type');
 		  $contact = $this->input->post('contact');
 		  $username	= $this->input->post('username');
 		  $password	= $this->input->post('password');
@@ -74,15 +74,15 @@ class Home extends CI_Controller {
 		
 		
 		  $data = array(
-		  			'first_name'=> $firstname , 	
+		  			'first_name'=> $firstname, 	
 		  			'last_name'=> $lastname, 	
 		  			'email'=> $email, 	
 					'birth_date' => $birthDate,		  			
 					'gender' => $gender,
 					'designation' => $designation,
-					'user_type' => $userType,
+					'user_type' => $user_type,
 		  			'contact'=> $contact, 	
-		  			'username'=> $username , 	
+		  			'username'=> $username, 	
 		  			'password'=> md5($password),
 					'is_active' => "yes",
 					'created_on' => "CURRENT_TIMESTAMP",

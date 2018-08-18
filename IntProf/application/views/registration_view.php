@@ -48,10 +48,10 @@
 					</div>
 				</div>
 				<label class="radio-inline">
-					<input type="radio" name="sex" id="inlineCheckbox1" value="male" />
+					<input type="radio" name="gender" id="inlineCheckbox1" value="male" />
 					Male </label>
 				<label class="radio-inline">
-					<input type="radio" name="sex" id="inlineCheckbox2" value="female" />
+					<input type="radio" name="gender" id="inlineCheckbox2" value="female" />
 					Female </label>
 				<br />
 				<br />
@@ -67,7 +67,7 @@
 				<div class="row">
 					
 					<div class="col-xs-6 col-md-6">
-						<select name="userType" class="form-control" >
+						<select name="user_type" class="form-control" >
 							
 							<option value=""> --- Register As --- </option>
 							<option value="1">Instructor</option>
@@ -89,7 +89,7 @@
                                 <!--<span id="usename_result"></span>-->
 					</div>
 					<div class="col-xs-6 col-md-6">
-						<input class="form-control" name="password" placeholder="Password" type="text"
+						<input class="form-control" name="password" placeholder="Password" type="password"
 												required autofocus 
 				
 					</div>

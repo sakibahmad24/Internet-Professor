@@ -19,7 +19,7 @@
             }
         }*/
 		public function save_registration($data) {
-$data['username'] = "amisdfgfdsgn";
+		//$data['username'] = ;
 		$username_check = $this->db->query("select * from users where username like('".$data['username']."')");
 		$num = $username_check->num_rows();
 		if($num > 0){

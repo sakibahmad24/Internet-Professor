@@ -24,7 +24,7 @@
                     <li>
                         <a href="contact.html">Contact</a>
                     </li>-->
-                    
+                <ul class="nav navbar-nav navbar-right"> 
                    <?php 
                    	if( isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] == 1){?> 
                     <li>
