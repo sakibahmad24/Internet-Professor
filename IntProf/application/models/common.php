@@ -44,6 +44,48 @@
 	}
 
 
+	function getTeacherCourses(){
+		$result = $this->db->where('teacher_id', $_SESSION['id'])->get('course')->result();
+		if (!empty($result)) {
+			# code...
+			return $result;
+		}
+		else {
+			return FALSE;
+		}
+	}
+
+	function getStudentsEnrolledCourses(){
+		$id = $_SESSION['id'];
+		$sql = "select c.* from course c join enrolled e on c.id=e.course_id where e.student_id = $id";
+
+		$result = $this->db->query($sql)->result();
+
+		if (!empty($result)) {
+			# code...
+			return $result;
+		}
+		else{
+			return FALSE;
+		}
+	}
+
+	function save_course($data) {
+
+		if ($_SESSION['user_type'] == 1) {
+			if ($this -> db -> insert('course', $data)) {
+				return TRUE;
+			}
+		} else if ($_SESSION['user_type'] == 2) {
+
+			if ($this -> db -> insert('enrolled', $data)) {
+				return TRUE;
+			}
+		}
+
+	}
+
+
 		
 	}
 ?>
