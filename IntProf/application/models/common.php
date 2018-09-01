@@ -269,6 +269,13 @@ function getCourseByActivationCode($data) {
 
 		}
 
+		function getAllGrades($student_id){
+			$sql = "select e.course_id, c.course_name, e.grade from enrolled e join course c on (e.course_id=c.id) where e.student_id=$student_id";
+
+			$result=$this->db->query($sql)->result();
+				return $result;
+		}
+
 
 	}
 ?>

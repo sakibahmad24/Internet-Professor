@@ -37,7 +37,7 @@
                     <?php if ($_SESSION['user_type']==1){ ?><a href="<?php echo site_url('Attendance/showAll/'.$course_id)?>" class="btn btn-default">Take Attendance</a> <?php }else{ ?>
                       <a href="<?php echo site_url('Attendance/showStdAttd/'.$course_id.'/'.$_SESSION['id'])?>" class="btn btn-default">View Attendance</a><?php } ?>
                     <?php if ($_SESSION['user_type']==1){ ?><a href="<?php echo site_url('Grade/getStudents/'.$course_id)?>" class="btn btn-default">Submit Grades</a><?php }else{ ?>
-                      <a href="<?php echo site_url('Grade/getStudents/'.$course_id)?>" class="btn btn-default">View Grades</a> <?php } ?>
+                      <a href="<?php echo site_url('Grade/getGrades/'.$_SESSION['id'])?>" class="btn btn-default">View Grades</a> <?php } ?>
                     <a href="<?php echo site_url('Live/goLive/'.$course_id)?>" class="btn btn-default">Go live Class</a>
                 </div>
             </div>

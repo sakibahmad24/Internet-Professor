@@ -68,6 +68,18 @@ class Grade extends CI_Controller {
 	}
 
 
+	public function getGrades(){
+
+		$student_id = $_SESSION['id'];
+		$result = $this->common->getAllGrades($student_id);
+		$data['grades'] = $result;
+		$data['view'] = "std_grade_view";
+		$this->load->view('template',$data);
+
+
+	}
+
+
 
 
 }	
