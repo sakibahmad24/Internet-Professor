@@ -51,4 +51,17 @@ class Attendance extends CI_Controller {
 
 	}
 
+
+	public function showStdAttd($course_id=0, $id=0){
+
+		$student_id = $_SESSION['id'];
+		$result = $this->common->getCourseAtt($course_id, $student_id);
+		$data['attendance'] = $result;
+		//$data['course_id'] = $course_id;
+		//$data['view'] = "std_attendance_view";
+
+		var_dump($data); die;
+		//$this->load->view('template',$data);
+	}
+
 }

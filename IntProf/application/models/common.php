@@ -261,6 +261,11 @@ function getCourseByActivationCode($data) {
 			
 		}
 
+		function getCourseAtt($course_id, $student_id){
+			$sql = "select a.student_id, u.first_name, u.last_name, a.attended, a.date from attendance a join users u on (a.student_id=u.id) where course_id=? AND student_id=? ";
+			$result = $this->db->query($sql,$course_id,$student_id)->result();
+		}
+
 
 	}
 ?>
