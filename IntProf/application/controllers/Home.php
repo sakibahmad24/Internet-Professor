@@ -24,7 +24,7 @@ class Home extends CI_Controller {
 	public function registration()
 	{
 		$data['view'] = "registration_view"; 
-		$this->load->view('template',$data);
+		$this->load->view('template_page',$data);
 		
 	}
 
@@ -32,7 +32,7 @@ class Home extends CI_Controller {
 	{
 
 		$data['view'] = "login_view";
-		$this->load->view('template',$data);
+		$this->load->view('template_login',$data);
 		
 		
 	}

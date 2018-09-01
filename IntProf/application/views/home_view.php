@@ -1,32 +1,5 @@
 
-        <!-- header begin -->
-        <header class="autoshow">
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <!-- logo begin -->
-                        <div id="logo">
-                            <a href="index.html">
-                                <img class="logo" src=<?php echo base_url("asset/images/logo-light.png")?> alt="">
-                                <img class="logo-2" src=<?php echo base_url("asset/images/logo-dark.png")?>  alt="">
-                            </a>
-                        </div>
-                        <!-- logo close -->
-
-                        <!-- small button begin -->
-                        <span id="menu-btn"></span>
-                        <!-- small button close -->
-
-                        <!-- mainmenu begin -->
-
-                    </div>
-                    <!-- mainmenu close -->
-
-                </div>
-            </div>
-        </header>
-        <!-- header close -->
+        
 
         <!-- content begin -->
         <div id="content" class="no-bottom no-top">

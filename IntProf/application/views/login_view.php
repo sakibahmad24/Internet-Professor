@@ -1,27 +1,37 @@
-<br>
-       <div class="container">
-      <div class="row">
-   
-        <div class="col-md-6 text-middle">
+ <!-- content begin -->
+        <div id="content" class="no-top no-bottom">
+            <!-- section begin -->
+            <section aria-label="section-login" class="full-height relative no-top no-bottom">
+
+
+                <div class="container-fluid">
+                    <div class="row-fluid table table-custom-1">
+                        <div class="col-md-6 text-middle  bg-color text-center">
                             <div class="padding100">
-
-
-                                <form name="contactForm" id='contact_form' class="form-border" method="POST" action="<?php echo site_url('home/login_submit')?>">
+                                <a href="index.html"><img class="logo" src="images/logo-white.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-middle">
+                            <div class="padding100">
+                                <form method="POST" action="<?php echo site_url('home/login_submit')?>" class="form-border" id='contact_form' >
                                     <h3>Login here</h3>
 
                                     <div class="tiny-border"></div>
 
-                                    <div class="panel-body">
-                                    <form method="POST" action="<?php echo site_url('home/login_submit')?>">
-                                    <input type="text" placeholder="Username" class="form-control" name="username" /> <br />
-                                    <input type="password" placeholder="Password" class="form-control" name="password" />
-                                        <br />
-                                    <input type="submit"  name="submit" value="Login" class="btn btn-success" />
-                
-                            
-                            
-                        </form>
-                    </div>
+                                    <div class="field-set">
+                                        <input type='text' name='username' id='name' class="form-control" placeholder="Username">
+                                    </div>
+
+                                   <div class="field-set">
+                                        <input type='text' name='password' id='password' class="form-control" placeholder="Password">
+                                    </div>
+
+
+                                    <div id='submit' class="pull-left">
+                                        <input type='submit' name="submit" value='Login' class="btn btn-custom color-2">
+
+                                        <div id='mail_success' class='success'>Your message has been sent successfully.</div>
+                                        <div id='mail_fail' class='error'>Sorry, error occured this time sending your message.</div>
 
                                         <div class="clearfix"></div>
 
@@ -30,33 +40,36 @@
                                         <!-- social icons -->
                                         <ul class="list s3">
                                             <li>Or login with:</li>
-                                            <li><a href="#">Facebook</a></li>
+                                            <!-- <li><a href="#">Facebook</a></li>
                                             <li><a href="#">Google</a></li>
-                                            <li><a href="#">Instagram</a></li>
+                                            <li><a href="#">Instagram</a></li> -->
                                         </ul>
                                         <!-- social icons close -->
 
                                         <div class="spacer-double"></div>
 
                                         <div class="spacer-double"></div>
+                                    </div>
                                 </form>
-                                </div>
+
+                                <br><br><br>
+                                <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+
+
                             </div>
-                </div>
-              </div>
-            </div>
-                 <div class="panel-footer">
-                        <a data-original-title="Broadcast Message" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-envelope"></i></a>
-                        <span class="pull-right">
-                            <a href="edit.html" data-original-title="Edit this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-edit"></i></a>
-                            <a data-original-title="Remove this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
-                        </span>
+                        </div>
                     </div>
-            
-          </div>
+
+            </section>
+            <!-- section close -->
+            </div>
+            <!-- content close -->
+
+            <a href="#" id="back-to-top"></a>
+            <div id="preloader">
+                <div class="s1">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-
-<hr>
-

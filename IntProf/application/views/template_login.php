@@ -30,14 +30,63 @@
     <!-- color scheme -->
     <link rel="stylesheet" id="colors" href=<?php echo base_url("asset/css/colors/orange.css")?> type="text/css">
 
+
+
+    <meta name="google-signin-scope" content="abualmahadi001@gmail.com">
+    <meta name="google-signin-client_id" content="853833852171-7hqquvl2l2iridej075fd179ng8hag81.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
 </head>
 
 <body id="homepage">
 
     <div id="wrapper">
+        <!-- header begin -->
+        <header class="header-light s2">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- logo begin -->
+                        <div id="logo">
+                            <a href="index.html">
+                                <img class="logo" src="images/logo-light.png" alt="">
+                                <img class="logo-2" src="images/logo-dark.png" alt="">
+                            </a>
+                        </div>
+                        <!-- logo close -->
+
+                        <!-- small button begin -->
+                        <span id="menu-btn"></span>
+                        <!-- small button close -->
+
+                        <!-- mainmenu begin -->
+                        <nav>
+                            <ul id="mainmenu">
+                                <li><a href=<?php echo base_url("index.php")?> >Home<span></span></a>
+                                </li>
+                                <li><a href=<?php echo base_url("page/about")?>>About<span></span></a>   
+                                </li>
+                                <li><a href=<?php echo base_url("Home/registration")?>>Register<span></span></a> </li>
+                                <li><a href="#">Log In<span></span></a>
+                                </li>
+                                <li><a href=<?php echo base_url("page/contact")?>>Contact<span></span></a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                    <!-- mainmenu close -->
+
+                </div>
+            </div>
+        </header>
+        <!-- header close -->
 
 
-<?php $this->load->view($view);?>
+
+
+    <?php $this->load->view($view);?>
 
 
 
@@ -97,6 +146,23 @@
     <script src=<?php echo base_url("asset/js/app.js")?>></script>
     <script src=<?php echo base_url("asset/js/designesia.js")?>></script>
     <script src=<?php echo base_url("asset/demo/demo.js")?>></script>
+
+    <script>
+      function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log('Full Name: ' + profile.getName());
+        console.log('Given Name: ' + profile.getGivenName());
+        console.log('Family Name: ' + profile.getFamilyName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
+
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
+      };
+    </script>
 </body>
 
 </html>
