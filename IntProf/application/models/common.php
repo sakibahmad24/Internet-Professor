@@ -177,7 +177,7 @@ function getCourseByActivationCode($data) {
 
 
 	function getAllEnrolled($course_id){
-		$sql = "select e.student_id, u.first_name, u.last_name from enrolled e join users u on (e.student_id=u.id) where course_id=?";
+		$sql = "select distinct(e.student_id), u.first_name, u.last_name from enrolled e join users u on (e.student_id=u.id) where course_id=?";
 		$result = $this->db->query($sql,$course_id)->result();
 		return $result;
 		
@@ -208,7 +208,7 @@ function getCourseByActivationCode($data) {
 
 
 	function getAllStdEnrolled($course_id){
-		$sql = "select e.id, e.student_id, u.first_name, u.last_name, e.grade from enrolled e join users u on (e.student_id=u.id) where course_id=?";
+		$sql = "select e.id, (e.student_id), u.first_name, u.last_name, e.grade from enrolled e join users u on (e.student_id=u.id) where course_id=? group by e.student_id";
 		$result = $this->db->query($sql,$course_id)->result();
 		return $result;
 	}
@@ -262,8 +262,11 @@ function getCourseByActivationCode($data) {
 		}
 
 		function getCourseAtt($course_id, $student_id){
-			$sql = "select a.student_id, u.first_name, u.last_name, a.attended, a.date from attendance a join users u on (a.student_id=u.id) where course_id=? AND student_id=? ";
-			$result = $this->db->query($sql,$course_id,$student_id)->result();
+			$sql = "select a.student_id, u.first_name, u.last_name, a.attended, a.date from attendance a join users u on (a.student_id=u.id) where course_id=$course_id AND student_id=$student_id ";
+			
+				$result=$this->db->query($sql)->result();
+				return $result;
+
 		}
 
 
