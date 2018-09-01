@@ -19,20 +19,6 @@
                         <!-- small button close -->
 
                         <!-- mainmenu begin -->
-                        <nav>
-                            <ul id="mainmenu">
-                                <li><a href=<?php echo site_url("index.php")?>>Home<span></span></a>
-                                </li>
-                                <li><a href=<?php echo site_url("about.php")?>>About<span></span></a>   
-                                </li>
-                                <li><a href=<?php echo site_url("register.php")?>>Register<span></span></a> </li>
-                                <li><a href=<?php echo site_url("login.html")?>>Log In<span></span></a>
-                                </li>
-                                <li><a href=<?php echo site_url("contact.html")?>>Contact<span></span></a>
-                                </li>
-
-                            </ul>
-                        </nav>
 
                     </div>
                     <!-- mainmenu close -->
@@ -124,7 +110,7 @@
             <!-- section begin -->
             <section id="section-portfolio" class="no-bottom no-top" aria-label="section-portfolio" data-bgcolor="#f8f8f8">
 
-			<div class="pt30" data-bgcolor="#dddddd">
+            <div class="pt30" data-bgcolor="#dddddd">
                 <ul id="filters" class="text-center">
                     <li><a href="#" data-filter="*" class="selected">all services</a></li>
                     <li><a href="#" data-filter=".illustration">main features</a></li>
@@ -132,8 +118,8 @@
                     <li><a href="#" data-filter=".photography">Teachers collaboration</a></li>
                     <li><a href="#" data-filter=".website">Students involvement</a></li>
                 </ul>
-				<div class="clearfix"></div>
-			</div>
+                <div class="clearfix"></div>
+            </div>
 
 
 
@@ -143,13 +129,13 @@
                     <div class="item illustration website gallery-item">
                         <div class="picframe wow">
                             <a class="image-popup" href=<?php echo base_url("asset/images/portfolio/pf%20(1).jpg")?>
-											<span class="overlay">
-												<span class="pf_text">
-													<span class="project-name">Assignment</span>
-												</span>
-											</span>
-											<img src=<?php echo base_url("asset/images/portfolio/pf%20(1).jpg")?> class="wow" alt=""/>
-										</a>
+                                            <span class="overlay">
+                                                <span class="pf_text">
+                                                    <span class="project-name">Assignment</span>
+                                                </span>
+                                            </span>
+                                            <img src=<?php echo base_url("asset/images/portfolio/pf%20(1).jpg")?> class="wow" alt=""/>
+                                        </a>
                         </div>
                     </div>
                     <!-- close gallery item -->
@@ -158,13 +144,13 @@
                     <div class="item photography gallery-item">
                         <div class="picframe wow">
                             <a class="image-popup" href=<?php echo base_url("asset/images/portfolio/pf%20(2).jpg")?>
-											<span class="overlay">
-												<span class="pf_text">
-													<span class="project-name">Q/A Forum</span>
-												</span>
-											</span>
-											<img src=<?php echo base_url("asset/images/portfolio/pf%20(2).jpg")?> class="wow" alt="" />
-										</a>
+                                            <span class="overlay">
+                                                <span class="pf_text">
+                                                    <span class="project-name">Q/A Forum</span>
+                                                </span>
+                                            </span>
+                                            <img src=<?php echo base_url("asset/images/portfolio/pf%20(2).jpg")?> class="wow" alt="" />
+                                        </a>
                         </div>
                     </div>
                     <!-- close gallery item -->
@@ -173,13 +159,13 @@
                     <div class="item illustration gallery-item">
                         <div class="picframe wow">
                             <a class="image-popup" href=<?php echo base_url("asset/images/portfolio/pf%20(3).jpg")?>
-											<span class="overlay">
-												<span class="pf_text">
-													<span class="project-name">Grades</span>
-												</span>
-											</span>
-											<img src=<?php echo base_url("asset/images/portfolio/pf%20(3).jpg")?> class="wow" alt="" />
-										</a>
+                                            <span class="overlay">
+                                                <span class="pf_text">
+                                                    <span class="project-name">Grades</span>
+                                                </span>
+                                            </span>
+                                            <img src=<?php echo base_url("asset/images/portfolio/pf%20(3).jpg")?> class="wow" alt="" />
+                                        </a>
                         </div>
                     </div>
                     <!-- close gallery item -->
@@ -188,13 +174,13 @@
                     <div class="item photography illustration mobile gallery-item">
                         <div class="picframe wow">
                             <a class="image-popup" href=<?php echo base_url("asset/images/portfolio/pf%20(4).jpg")?>
-											<span class="overlay">
-												<span class="pf_text">
-													<span class="project-name">Live Classes</span>
-												</span>
-											</span>
-											<img src=<?php echo base_url("asset/images/portfolio/pf%20(4).jpg")?> class="wow" alt="" />
-										</a>
+                                            <span class="overlay">
+                                                <span class="pf_text">
+                                                    <span class="project-name">Live Classes</span>
+                                                </span>
+                                            </span>
+                                            <img src=<?php echo base_url("asset/images/portfolio/pf%20(4).jpg")?> class="wow" alt="" />
+                                        </a>
                         </div>
                     </div>
                     <!-- close gallery item -->
@@ -203,13 +189,13 @@
                     <div class="item photography mobile website gallery-item">
                         <div class="picframe wow">
                             <a class="image-popup" href=<?php echo base_url("asset/images/portfolio/pf%20(5).jpg")?>
-											<span class="overlay">
-												<span class="pf_text">
-													<span class="project-name">Group Discussion</span>
-												</span>
-											</span>
-											<img src=<?php echo base_url("asset/images/portfolio/pf%20(5).jpg")?> class="wow" alt="" />
-										</a>
+                                            <span class="overlay">
+                                                <span class="pf_text">
+                                                    <span class="project-name">Group Discussion</span>
+                                                </span>
+                                            </span>
+                                            <img src=<?php echo base_url("asset/images/portfolio/pf%20(5).jpg")?> class="wow" alt="" />
+                                        </a>
                         </div>
                     </div>
                     <!-- close gallery item -->
@@ -218,13 +204,13 @@
                     <div class="item mobile website gallery-item">
                         <div class="picframe wow">
                             <a class="image-popup" href=<?php echo base_url("asset/images/portfolio/pf%20(6).jpg")?>
-											<span class="overlay">
-												<span class="pf_text">
-													<span class="project-name">Attendance</span>
-												</span>
-											</span>
-											<img src=<?php echo base_url("asset/images/portfolio/pf%20(6).jpg")?> class="wow" alt="" />
-										</a>
+                                            <span class="overlay">
+                                                <span class="pf_text">
+                                                    <span class="project-name">Attendance</span>
+                                                </span>
+                                            </span>
+                                            <img src=<?php echo base_url("asset/images/portfolio/pf%20(6).jpg")?> class="wow" alt="" />
+                                        </a>
                         </div>
                     </div>
                     <!-- close gallery item -->

@@ -5,10 +5,10 @@
 
                 <div class="row">
                     <div class="col-md-4">
-						<div class="widget">
+                        <div class="widget">
                             <h5>About Internet Professor</h5>
-							<div class="tiny-border"><span></span></div>
-							<p>Ip is the best interactive platform for teachers and students. It allows the teacher to monitor a student effectively.</p>
+                            <div class="tiny-border"><span></span></div>
+                            <p>Ip is the best interactive platform for teachers and students. It allows the teacher to monitor a student effectively.</p>
                         </div>
                     </div>
 
@@ -17,7 +17,7 @@
                             <div class="col-md-4 col-xs-4">
                                 <div class="widget">
                                     <h5>Company</h5>
-									<div class="tiny-border"><span></span></div>
+                                    <div class="tiny-border"><span></span></div>
                                     <ul>
                                         <li><a href="#">About Us</a></li>
                                         <li><a href="#">Team</a></li>
@@ -31,7 +31,7 @@
                             <div class="col-md-4 col-xs-4">
                                 <div class="widget">
                                     <h5>Services</h5>
-									<div class="tiny-border"><span></span></div>
+                                    <div class="tiny-border"><span></span></div>
                                     <ul>
                                         <li><a href="#">Assignment</a></li>
                                         <li><a href="#">Live Classes</a></li>
@@ -45,7 +45,7 @@
                             <div class="col-md-4 col-xs-4">
                                 <div class="widget">
                                     <h5>Help &amp; Support</h5>
-									<div class="tiny-border"><span></span></div>
+                                    <div class="tiny-border"><span></span></div>
                                     <ul>
                                         <li><a href="#">Help Center</a></li>
                                         <li><a href="#">Contact Us</a></li>

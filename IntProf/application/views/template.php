@@ -12,8 +12,8 @@
     <meta name="author" content="">
 
     <!--[if lt IE 9]>
-	<script src="js/html5shiv.js"></script>
-	<![endif]-->
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
 
     <!-- CSS Files
     ================================================== -->
@@ -35,6 +35,7 @@
 <body id="homepage">
 
     <div id="wrapper">
+        <?php $this->load->view("nav");?>
 
 <?php $this->load->view($view);?>
 

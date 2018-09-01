@@ -117,7 +117,7 @@
 										<p>
 											<?php echo $value->description?>
 										</p>
-										<a href="<?php echo site_url('thread/course_thread/'.$value->id.'/'.urlencode($value->course_name))?>" class="btn btn-primary">Enter</a>
+										<a href="<?php echo site_url('Thread/course_thread/'.$value->id.'/'.urlencode($value->course_name))?>" class="btn btn-primary">Enter</a>
 									</div>
 								</div>
 							</div>

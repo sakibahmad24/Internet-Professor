@@ -28,6 +28,16 @@ class Home extends CI_Controller {
 		
 	}
 
+	public function login()
+	{
+
+		$data['view'] = "login_view";
+		$this->load->view('template',$data);
+		
+		
+	}
+
+
 	/*function username_availability(){
 	    $data['view'] = "registration_view";
 	    $this->load->view('template',$data);
@@ -109,7 +119,7 @@ class Home extends CI_Controller {
 		}
 	}
 
-	public function login(){
+	public function login_submit(){
 		if (isset($_POST['submit'])) {
 			# code...
 			$username = $this->input->post('username');

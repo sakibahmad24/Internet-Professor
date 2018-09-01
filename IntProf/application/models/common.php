@@ -70,6 +70,44 @@
 		}
 	}
 
+	function getThreadById($thread_id) {
+
+		$result = $this -> db -> select('thread.*, users.first_name,users.last_name,') -> join('users', 'users.id = thread.user_id') -> where('thread.id', $thread_id) -> get('thread') -> row();
+		//var_dump($result);
+		
+		return $result;
+	}
+
+	function getCommentsByThreadId($thread_id) {
+
+		/*$sql = "select u.first_name, u.last_name, t.*, c.*
+		 from comments c
+		 join users u on (c.comment_user_id = u.id)
+		 join thread t on (c.thread_id = t.id)
+		 where t.id = $thread_id";*/
+
+		$sql = "select c.*,u.first_name, u.last_name
+				from comments c 
+				join users u on (c.comment_user_id = u.id)
+				where thread_id = $thread_id order by c.id desc";
+
+		$result = $this -> db -> query($sql) -> result();
+		//var_export($result); die;
+		return $result;
+
+	}
+
+	function save_comment($data) {
+
+		if ($this -> db -> insert('comments', $data)) {
+
+			return TRUE;
+		}
+	}
+
+
+
+
 	function save_course($data) {
 
 		if ($_SESSION['user_type'] == 1) {
@@ -85,7 +123,106 @@
 
 	}
 
+	function save_question($data) {
 
+		if ($this -> db -> insert('thread', $data)) {
+
+			return TRUE;
+		}
+	}
+
+
+function getCourseByActivationCode($data) {
+		$this -> db -> from('course');
+		$this -> db -> where('activation_code', $data);
+		$query = $this -> db -> get() -> row();
+		return $query;
+	}
+
+
+	function getAllThreadFromCourse($course_id) {
+
+		$result = $this -> db -> select('thread.*, users.first_name,users.last_name,') -> join('users', 'users.id = thread.user_id') -> where('course_id', $course_id) -> order_by('created_on', 'desc') -> get('thread') -> result();
+		//var_dump($result);
+		return $result;
+	}
+
+	function update_flag($data, $thread_id) {
+		if ($this -> db -> where('id', $thread_id) -> update('thread', $data)) {
+			return TRUE;
+		}
+	}
+	
+	
+	
+	function updateLikeFlag($data, $comment_id, $current_flag){
+		if($this->db->insert('likes', $data)){
+				
+				
+			$this->db->where('id', $comment_id);
+			if($current_flag == 1){
+				$this->db->set('comment_votes', 'comment_votes-1', FALSE);      
+			}else{
+				$this->db->set('comment_votes', 'comment_votes+1', FALSE) ;     
+			}
+				if($this->db->update('comments')){
+					return TRUE;
+				}else{
+					return FALSE;
+				}
+		}
+		return FALSE;
 		
+	}
+
+
+	function getAllEnrolled($course_id){
+		$sql = "select e.student_id, u.first_name, u.last_name from enrolled e join users u on (e.student_id=u.id) where course_id=?";
+		$result = $this->db->query($sql,$course_id)->result();
+		return $result;
+		
+
+	}
+
+
+	function submitAttendance($att_data){
+
+		$sql = "INSERT INTO `attendance` (`att_id`, `course_id`, `student_id`, `attended`, `date`) VALUES";
+		foreach ($att_data as $key => $value) {
+			$course_id = $key;
+			
+			foreach ($value as $x => $y) {
+				$student_id = $x;
+				$is_present = $y;
+				$sql .= "('', '$course_id', '$student_id', '$is_present',  CURRENT_TIMESTAMP),";
+			}
+
+
+		}
+		
+		$sql = rtrim($sql, ",");
+		$result = $this->db->query($sql);
+
+		return $result;
+	}
+
+
+	function getAllStdEnrolled($course_id){
+		$sql = "select e.id, e.student_id, u.first_name, u.last_name, e.grade from enrolled e join users u on (e.student_id=u.id) where course_id=?";
+		$result = $this->db->query($sql,$course_id)->result();
+		return $result;
+	}
+
+
+	function saveLink($link){
+
+		$sql = "INSERT INTO `livelinks`(`id`, `link`, `posted_on`) VALUES ('', '$link', CURRENT_TIMESTAMP)";
+		
+		$result = $this->db->query($sql);
+		
+		return $result;
+	}
+
+
 	}
 ?>

@@ -1,34 +1,42 @@
 <br>
 <br>
-<br>
-<br>
 <div class="container" >
-	<div class="row" style = "width:80%; margin: 0 auto">
-		<div class="col-xs-12  well well-sm">
-			<legend>
-				<i class="glyphicon glyphicon-globe"></i></a> Sign up!
-			</legend>
-			<form action="<?php echo site_url('home/save_registration')?>" method="post" class="form" role="form">
-				<div class="row">
-					<div class="col-xs-6 col-md-6">
-						<input class="form-control" name="firstname" placeholder="First Name" type="text"
-						required autofocus />
-					</div>
-					<div class="col-xs-6 col-md-6">
-						<input class="form-control" name="lastname" placeholder="Last Name" type="text" required />
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-6 col-md-6">
-						<input class="form-control" name="email" placeholder="Email" type="text"
-						required autofocus />
-					</div>
-					<div class="col-xs-6 col-md-6">
-						<input class="form-control" name="contact" placeholder="Contact" type="text" required />
-					</div>
-				</div>
+	<div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <h3>Don't have an account? Register now.</h3>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                            <form name="contactForm" id='contact_form' class="form-border" method="post" action='http://www.themenesia.com/themeforest/linea-new/blank.php'>
 
-				<label for=""> Birth Date</label>
+                                <div class="row">
+
+                                    <div class="col-md-6">
+                                        <div class="field-set">
+                                            <label>First Name:</label>
+                                            <input type='text' name='firstname' id='firstname' class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="field-set">
+                                            <label>Last Name:</label>
+                                            <input type='text' name='lastname' id='lastname' class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="field-set">
+                                            <label>Email Address:</label>
+                                            <input type='text' name='email' id='email' class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="field-set">
+                                            <label>Contact:</label>
+                                            <input type='text' name='contact' id='contact' class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <label for=""> Birth Date</label>
 				<div class="row">
 					<div class="col-xs-4 col-md-1">
 						<input class="form-control" name="day" placeholder="DD" type="text"
@@ -47,58 +55,49 @@
 
 					</div>
 				</div>
-				<label class="radio-inline">
-					<input type="radio" name="gender" id="inlineCheckbox1" value="male" />
-					Male </label>
-				<label class="radio-inline">
-					<input type="radio" name="gender" id="inlineCheckbox2" value="female" />
-					Female </label>
-				<br />
-				<br />
 
-				<div class="row">
+                                    <div class="col-md-6">
+                                        <div class="field-set">
+                                            <label>Choose a Username:</label>
+                                            <input type='text' name='username' id='username' class="form-control">
+                                        </div>
+                                    </div>
 
-					<div class="col-xs-6 col-md-6">
-						<input class="form-control" name="designation" placeholder="Designation" type="text"
-						required autofocus />
-					</div>
-				</div>
 
-				<div class="row">
-					
-					<div class="col-xs-6 col-md-6">
-						<select name="user_type" class="form-control" >
-							
-							<option value=""> --- Register As --- </option>
-							<option value="1">Instructor</option>
-							<option value="2">Student</option>
-							
-							
-						</select>
-					</div>
-				</div>
+                                    <div class="col-md-6">
+                                        <div class="field-set">
+                                            <label>Password:</label>
+                                            <input type='text' name='password' id='password' class="form-control">
+                                        </div>
+                                    </div>
 
-				
-						
-				<div class="row">
-					
-					
-					<div class="col-xs-6 col-md-6">
-								<input class="form-control" name="username" placeholder="Username" type="text"
-												required autofocus />
-                                <!--<span id="usename_result"></span>-->
-					</div>
-					<div class="col-xs-6 col-md-6">
-						<input class="form-control" name="password" placeholder="Password" type="password"
-												required autofocus 
-				
-					</div>
-				</div>
-				<button class="btn btn-lg btn-primary btn-block" name="submit" type="submit">
-					Sign up
-				</button>
-			</form>
-		</div>
+                                    <div class="col-md-6">
+                                        <div class="field-set">
+                                            <label>Re-enter Password:</label>
+                                            <input type='text' name='re-password' id='re-password' class="form-control">
+                                        </div>
+                                    </div>
+
+
+                                    <div class="spacer-single"></div>
+
+                                    <div class="col-md-12">
+
+                                        <div id='submit' class="pull-left">
+                                            <input type='submit' id='send_message' value='Register Now' class="btn btn-custom color-2">
+                                        </div>
+
+                                        <div id='mail_success' class='success'>Your message has been sent successfully.</div>
+                                        <div id='mail_fail' class='error'>Sorry, error occured this time sending your message.</div>
+                                        <div class="clearfix"></div>
+
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
 	</div>
 </div>
 
