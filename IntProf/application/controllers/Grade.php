@@ -28,24 +28,46 @@ class Grade extends CI_Controller {
 
 	public function submitGrade(){
 
+
 		$data = $this->input->post();
+		
+		$course_id = $data['course_id'];
+		unset($data['course_id']);
 		unset($data['submit']);
-		//var_dump($data);
-
-
+		
+		$i = 0;
 		foreach ($data as $key => $value) {
-			# code...
 
-			$enroll_id = $data['enroll_id'];
-
+			$student_id = substr($key,0,3);
+			$enroll_id = substr($key,3);
 			
+
+			$grade[$course_id][$i] = array(
+
+				'student_id' => $student_id,
+				'grade' => $value,
+				'enroll_id' => $enroll_id 
+
+
+			);
+			$i++;
 		}
 
-		
+		$this->common->save_grade($grade);
+
+
+		if ($result==TRUE) {
+			$this->session->set_flashdata('success', 'Grade submitted successfully');
+			redirect('Thread/course_thread/'.$course_id, 'refresh');
+		}
+		else{
+			$this->session->set_flashdata('error', 'Something went wrong! Please try again..');
+			redirect('Grade/submitGrade/'.$course_id, 'refresh');
+		}
 		
 	}
 
 
 
 
-}
+}	

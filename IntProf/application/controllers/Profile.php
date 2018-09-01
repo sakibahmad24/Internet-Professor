@@ -24,7 +24,7 @@ class Profile extends CI_Controller {
 			# code...
 			redirect('home');
 		}
-
+		$data['id']= $_SESSION['id'];
 		$data['first_name']= $_SESSION['first_name']; 	
   			$data['last_name']= $_SESSION['last_name']; 	
   			$data['email']= $_SESSION['email']; 	
@@ -33,12 +33,33 @@ class Profile extends CI_Controller {
 			$data['designation']= $_SESSION['designation'];
 			$data['user_type' ]= $_SESSION['user_type'];
   			$data['contact']= $_SESSION['contact']; 	
-  			$data['username']= $_SESSION['username']; 	
+  			$data['username']= $_SESSION['username'];
+  			$data['password']= $_SESSION['password']; 	
 			$data['is_active']= $_SESSION['is_active'];
 
 			$data['view'] = "profile_view"; 
 			$this->load->view('template',$data);
 	}
+
+	public function changeInfo($id){
+
+		$this->load->model('common');
+    	if (isset($_POST['update'])) {
+    		# code...
+    		if ($this->Product_model->updateProduct($id)) {
+    			# code...
+    			$this->session->set_flashdata('success', 'Product updated succesfully!!');
+    			redirect('product/edit/'.$id, 'refresh');
+    		}
+    		else{
+    			$this->session-set_flashdata('error', 'An error occured!!');
+    			redirect('product/edit/'.$id, 'refresh');
+    		}
+    	}
+
+    	$data['product'] = $this->Product_model->getProduct($id);
+    	$this->load->view('edit_product', $data);
+    }
 	
 	
 }

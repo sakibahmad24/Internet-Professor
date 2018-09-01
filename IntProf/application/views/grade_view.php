@@ -21,27 +21,24 @@
                         <td><?php echo $value->student_id; ?></td>
                         <td><?php echo $value->first_name." ".$value->last_name; ?></td>
                         <td>
-                        <select name="<?php echo $value->student_id?>" class="form-control" >
+                        <select name="<?php echo $value->student_id.$value->id;?>" class="form-control" >
               
-              <option value="0"> <?php echo $value->grade; ?></option>
-              <option name="<?php echo $value->student_id?>" value="A">A</option>
-              <option name="<?php echo $value->student_id?>" value="A-">A-</option>
-              <option name="<?php echo $value->student_id?>" value="B+">B+</option>
-              <option name="<?php echo $value->student_id?>" value="B">B</option>
-              <option name="<?php echo $value->student_id?>" value="B-">B-</option>
-              <option name="<?php echo $value->student_id?>" value="C+">C+</option>
-              <option name="<?php echo $value->student_id?>" value="C">C</option>
-              <option name="<?php echo $value->student_id?>" value="C-">C-</option>
-              <option name="<?php echo $value->student_id?>" value="D+">D+</option>
-              <option name="<?php echo $value->student_id?>" value="D">D</option>
-              <option name="<?php echo $value->student_id?>" value="F">F</option>
+              <option value="0"> <?php echo $value->grade ?></option>
+              <option value="A">A</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="B-">B-</option>
+              <option value="C+">C+</option>
+              <option value="C">C</option>
+              <option value="C-">C-</option>
+              <option value="D+">D+</option>
+              <option value="D">D</option>
+              <option value="F">F</option>
               
             </select>
-                            <!--<input checked type="radio" name="<?php //echo $value->student_id?>" value="yes"> Yes
-                            <input  type="radio" name="<?php //echo $value->student_id?>" value="no"> No-->
                         </td>
                     </tr>
-                    <input type="hidden" name="enroll_id[<?php echo $value->student_id?>]" value="<?php echo $value->id ?>">
                    <?php $i++; }?>
                    <tr>
                     <input type="submit" name="submit" value="Submit">

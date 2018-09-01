@@ -54,15 +54,15 @@
                       </tr>
                     </tbody>
                   </table>
-                  <a href="<?php echo site_url("courses")?>" class="btn btn-primary">Ongoing Enrolled Courses</a>
-                  <a href="#" class="btn btn-primary">Change Password</a>
+                  <a href="<?php echo site_url("courses")?>" class="btn btn-primary">Ongoing Courses</a>
+                  <!-- <a href="<?php //echo site_url("profile")?>" class="btn btn-primary">Change Password</a> -->
                 </div>
               </div>
             </div>
                  <div class="panel-footer">
                         <a data-original-title="Broadcast Message" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-envelope"></i></a>
                         <span class="pull-right">
-                            <a href="edit.html" data-original-title="Edit this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-edit"></i></a>
+                            <a href="<?php echo site_url("profile/changeInfo/".$_SESSION['id'])?>" data-original-title="Edit this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-edit"></i></a>
                             <a data-original-title="Remove this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
                         </span>
                     </div>

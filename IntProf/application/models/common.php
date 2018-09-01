@@ -219,9 +219,47 @@ function getCourseByActivationCode($data) {
 		$sql = "INSERT INTO `livelinks`(`id`, `link`, `posted_on`) VALUES ('', '$link', CURRENT_TIMESTAMP)";
 		
 		$result = $this->db->query($sql);
-		
+
 		return $result;
 	}
+
+
+
+		function save_grade($grade){
+
+			//$sql = "INSERT INTO table (id, name, age) VALUES(1, "A", 19) ON DUPLICATE KEY UPDATE    
+			//		name="A", age=19";
+			echo "<pre>";
+			//var_dump($grade);
+
+			foreach ($grade as $key => $value) {
+				$course_id = $key;
+				
+				//var_dump($value);
+
+				foreach ($value as $x => $y) {
+					$student_id = $y['student_id'];
+					$grade = $y['grade'];
+					$enroll_id = $y['enroll_id'];
+				}
+
+			$sql = "INSERT INTO `enrolled` (`id`, `course_id`, `teacher_id`, `student_id`, `grade`, `updated_on`) VALUES ('$enroll_id', '$course_id', '', '$student_id', '$grade', CURRENT_TIMESTAMP) ";
+
+//ON DUPLICATE KEY UPDATE (`id`=$enroll_id, `course_id`='$course_id', `teacher_id`='', `student_id`='$student_id', `grade`='$grade', `updated_on` = CURRENT_TIMESTAMP)
+
+			$result = $this->db->query($sql);
+			return $result;
+
+			}
+
+
+
+
+
+
+
+			
+		}
 
 
 	}

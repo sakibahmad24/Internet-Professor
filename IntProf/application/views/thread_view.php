@@ -34,8 +34,10 @@
             <div class="col-md-2">
                 <div class="list-group">
                    	<button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Post Something</button><br>
-                    <a href="<?php echo site_url('Attendance/showAll/'.$course_id)?>" class="btn btn-default">Take Attendance</a>
-                    <a href="<?php echo site_url('Grade/getStudents/'.$course_id)?>" class="btn btn-default">Submit Grades</a>
+                    <?php if ($_SESSION['user_type']==1){ ?><a href="<?php echo site_url('Attendance/showAll/'.$course_id)?>" class="btn btn-default">Take Attendance</a> <?php }else{ ?>
+                      <a href="<?php echo site_url('Attendance/showAll/'.$course_id)?>" class="btn btn-default">View Attendance</a><?php } ?>
+                    <?php if ($_SESSION['user_type']==1){ ?><a href="<?php echo site_url('Grade/getStudents/'.$course_id)?>" class="btn btn-default">Submit Grades</a><?php }else{ ?>
+                      <a href="<?php echo site_url('Grade/getStudents/'.$course_id)?>" class="btn btn-default">View Grades</a> <?php } ?>
                     <a href="<?php echo site_url('Live/goLive/'.$course_id)?>" class="btn btn-default">Go live Class</a>
                 </div>
             </div>
