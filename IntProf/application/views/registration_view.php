@@ -1,18 +1,17 @@
 
 <!-- subheader -->
-        <section id="subheader" class="s2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 text-middle">
-                        <h1>Register</h1>
-                    </div>
-
-                    <div class="col-md-6 text-middle">
-                        <ul class="crumb">
-                            <li><a href="index.html">Home</a></li>
-                            <li class="sep"></li>
-                            <li>Register</li>
-                        </ul>
+        <section id="subheader" class="dark no-top no-bottom" data-bgimage=<?php echo base_url("asset/images/background/sb1.jpg)")?> data-stellar-background-ratio=".2">
+            <div class="overlay-bg t70">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>Register</h1>
+                            <ul class="crumb">
+                                <li><a href="index.html">Home</a></li>
+                                <li class="sep"></li>
+                                <li>Register</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -26,18 +25,18 @@
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
                             <h3>Don't have an account? Register now.</h3>
-                            <!-- <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> -->
+                            
                             <form action="<?php echo site_url('home/save_registration')?>" method="post" class="form" >
                 <div class="row">
-                    <div class="col-xs-6 col-md-6">
+                    <div style="margin-bottom: 30px" class="col-xs-6 col-md-6">
                         <input class="form-control" name="firstname" placeholder="First Name" type="text"
                         required autofocus />
                     </div>
-                    <div class="col-xs-6 col-md-6">
+                    <div  class="col-xs-6 col-md-6">
                         <input class="form-control" name="lastname" placeholder="Last Name" type="text" required />
                     </div>
                 </div>
-                <div class="row">
+                <div style="margin-bottom: 35px" class="row">
                     <div class="col-xs-6 col-md-6">
                         <input class="form-control" name="email" placeholder="Email" type="text"
                         required autofocus />
@@ -48,7 +47,7 @@
                 </div>
 
                 <label for=""> Birth Date</label>
-                <div class="row">
+                <div style="margin-bottom: 35px" class="row">
                     <div class="col-xs-4 col-md-1">
                         <input class="form-control" name="day" placeholder="DD" type="text"
                         required autofocus />
@@ -77,7 +76,7 @@
 
                 <div class="row">
 
-                    <div class="col-xs-6 col-md-6">
+                    <div style="margin-bottom: 35px" class="col-xs-6 col-md-6">
                         <input class="form-control" name="designation" placeholder="Designation" type="text"
                         required autofocus />
                     </div>
@@ -85,7 +84,7 @@
 
                 <div class="row">
                     
-                    <div class="col-xs-6 col-md-6">
+                    <div style="margin-bottom: 35px" class="col-xs-6 col-md-6">
                         <select name="user_type" class="form-control" >
                             
                             <option value=""> --- Register As --- </option>
@@ -102,7 +101,7 @@
                 <div class="row">
                     
                     
-                    <div class="col-xs-6 col-md-6">
+                    <div  style="margin-bottom: 35px" class="col-xs-6 col-md-6">
                                 <input class="form-control" name="username" placeholder="Username" type="text"
                                                 required autofocus />
                     </div>

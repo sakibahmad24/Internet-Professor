@@ -1,11 +1,11 @@
         <!-- subheader -->
-        <section id="subheader">
+        <section id="subheader" class="header-light">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <h1>Contact Us</h1>
                         <ul class="crumb">
-                            <li><a href="index.html">Home</a></li>
+                            <li>Home</li>
                             <li class="sep"></li>
                             <li>News</li>
                         </ul>
@@ -32,26 +32,26 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="mask">
-                                            <img src="images/misc/3.jpg" alt="" class="img-responsive mb30 wow fadeInUp">
+                                            <img src=<?php echo base_url("asset/images/misc/3.jpg")?> alt="" class="img-responsive mb30 wow fadeInUp">
                                         </div>
                                         <h3>Main Office</h3>
                                         <address class="s1">
-                                                <span><i class="fa fa-map-marker fa-lg"></i>100 Mainstreet Center, Sydney</span>
-                                                <span><i class="fa fa-phone fa-lg"></i>(208) 333 9296</span>
-                                                <span><i class="fa fa-envelope-o fa-lg"></i><a href="mailto:contact@example.com">contact@example.com</a></span>
+                                                <span><i class="fa fa-map-marker fa-lg"></i>North South University, Dhaka</span>
+                                                <span><i class="fa fa-phone fa-lg"></i>000000000</span>
+                                                <span><i class="fa fa-envelope-o fa-lg"></i><a href="mailto:contact@example.com">nsu@nsu.com</a></span>
                                                 <span><i class="fa fa-file-pdf-o fa-lg"></i><a href="#">Download Resume</a></span>
                                             </address>
                                     </div>
 
                                     <div class="col-md-6">
                                         <div class="mask">
-                                            <img src="images/misc/4.jpg" alt="" class="img-responsive mb30 wow fadeInUp" data-wow-delay=".2s">
+                                            <img src=<?php echo base_url("asset/images/misc/4.jpg")?> alt="" class="img-responsive mb30 wow fadeInUp" data-wow-delay=".2s">
                                         </div>
                                         <h3>Branch Office</h3>
                                         <address class="s1">
-                                                <span><i class="fa fa-map-marker fa-lg"></i>100 Mainstreet Center, Sydney</span>
-                                                <span><i class="fa fa-phone fa-lg"></i>(208) 333 9296</span>
-                                                <span><i class="fa fa-envelope-o fa-lg"></i><a href="mailto:contact@example.com">contact@example.com</a></span>
+                                                <span><i class="fa fa-map-marker fa-lg"></i>North South University, Dhaka</span>
+                                                <span><i class="fa fa-phone fa-lg"></i>000000000</span>
+                                                <span><i class="fa fa-envelope-o fa-lg"></i><a href="mailto:contact@example.com">nsu@nsu.com</a></span>
                                                 <span><i class="fa fa-file-pdf-o fa-lg"></i><a href="#">Download Resume</a></span>
                                             </address>
                                     </div>

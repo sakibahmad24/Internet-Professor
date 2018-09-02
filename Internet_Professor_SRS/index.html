@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>System Requirement Specification</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/resume.min.css" rel="stylesheet">
+    <link href="css/resume.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">System Requirement Specification</span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/logo.jpg" alt="">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#Introduction">Introduction</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#Description">Overall Description</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#Requirements">External Interface Requirements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#Features">System Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#Non-functional">Other Non-functional Requirements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#Other"> Other Requirements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#Appendix"> Appendix</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+          <h1 style="text-align: center;" class="mb-0">System Requirement Specification<br>
+            <span class="text-primary">Internet Professor</span>
+          </h1>
+          <div style="padding-top: 30px;" class="subheading mb-5">Prepared by:
+          </div>
+          <div>
+            <table class="tableStyle">
+  <tr>
+    <th>Name</th>
+    <th>Id</th>
+  </tr>
+  <tr>
+    <td>Mohammed Abu-Al Mahadi</td>
+    <td>1510350642</td>
+  </tr>
+  <tr>
+    <td>Kazi Sakib Ahmad</td>
+    <td>1510702042</td>
+  </tr>
+  <tr>
+    <td>Muhammad Sakib Khan</td>
+    <td>1520016042</td>
+  </tr>
+  <tr>
+    <td>Md Redowan Amin Mollick</td>
+    <td>1420017042</td>
+  </tr>
+  <tr>
+    <td>Faysal Mahmud Nahid</td>
+    <td>1521387042</td>
+  </tr>
+</table>
+          </div>
+          <p class="lead mb-5"></p>
+          <div class="social-icons">
+          </div>
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="Introduction">
+        <div class="my-auto">
+          <h2 class="mb-5">Introduction</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Purpose</h3>
+              
+              <p>The name of the software which software requirements are specified in this document is "Internet Professor", which will act as a dynamic Online Teaching Assistant (Online TA) system. Current release number is 1.0.0.</p>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Document Conventions</h3>
+              <p>
+<ul>
+  <li>Font family: Times New Roman</li>
+  <li>Font Size: 11</li>
+  <li>Line spacing: 1.15</li>
+</ul>
+We used BOLD characters to highlight many important words. We have also used bullets and numbering to enlist different ordered and unordered list.</p>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Intended Audience and Reading Suggestions</h3>
+                            <p>The document is mainly intended for 3 kinds of people. They are:
+
+<ul>
+  <li>Project Executives (who are going to construct the whole system in many stages, i.e. Developers, project manager, testers, marketing staffs and documentation writer)</li>
+  <li>Users (Teachers, Students)</li>
+  <li>System Administrators (who are going to administrate the system after when it runs)</li>
+</ul>
+
+For all of the readers the Introduction section is very important. Because everyone is going to get a glimpse of what this project is intended for, what is the usability of this and system and what is the main characteristics of this system. For the Developers and other Project Executives Section 2, 3, 4, 5 are very important as the main project scopes, detailed requirements and other related specifications are sketched there. For the marketing staffs Section 1, 5 are the most important part for gathering marketing hints. Section 4: System Features is important for all the audience as this part describes in details what the features of the system are but if anyone is only intending for knowing the product features in brief then Section 1.4 will be very helpful.</p>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row ">
+            <div class="resume-content mr-auto mb-5">
+              <h3 class="mb-0">Product Scope</h3>
+              
+              <p>This website is going to be worked as a complete system where teacher and students will be connected virtually. Teachers can create classes and students can enroll themselves after a process of verification. There will be scope for live classes through video sharing. It will also work as a Q&A platform among students and teachers. Teachers can post assignments and students can also submit their works online. This platform will be also used for posting grades and/or marks. A student can check out his/her live standing/performance in different classes. We are hoping to launch online attendance system in every classes. Users can search queries using voice search</p>
+            </div>
+            
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto ">
+              <h3 class="mb-0">References</h3>
+              
+              <p>Incomplete? to be added later?</p>
+            </div>
+            
+          </div>
+
+      </section>
+
+      
+
+
+
+
+
+
+      <hr class="m-0">
+
+      
+
+
+
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="Description">
+        <div class="my-auto">
+          <h2 class="mb-5">Overall Description</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto mb-5">
+              <h3 class="mb-0">Product Perspective</h3>
+              
+              <p>Online Teaching Assistant (Online TA) system is a web based application designed to minimize the amount of time required for data management and operation on the system. This product is a new self contend product. This system should be able to find a route using user criteria. User can login to his or her account and see what they are looking for. The system will show the grades, the regular attendance, and Q/A sections. Assignments topic also can be posted and receive. There will be the option for live classes.</p>
+            </div>
+            
+          </div>
+
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto mb-5">
+              <h3 class="mb-0">Product Functions</h3>
+              
+              <p>The system comprises of 2 major modules with their sub-modules as follows:
+
+<p><strong>Teacher:</strong></p>
+<ul>
+  <li>Teachers will be able to login on their personal accounts. They will create Classes, name of the Classes, can add related resources</li>
+  <li>Teachers can post different notice & announcements</li>
+  <li>Teachers can post assignments and can check submissions</li>
+  <li>Teachers can take online video classes</li>
+  <li>Teachers will be able to take regular attendance and take participate in Q/A box. They can schedule exams on calender</li>
+  <li>Teachers can post marks of different students and can grade them online</li>
+   <li>Teachers will be able to share study materials</li>
+   <li>They can search past notices and/or other announcements through voice search</li>
+</ul>
+</p>
+
+<p><strong>Student:</strong></p>
+<ul>
+  <li>Students can register his personal detail, and login his/her account.</li>
+  <li>After login student will be able to view the ask question box and they can check attendance.</li>
+  <li>Students will be able to check the due assignments and they can submit.</li>
+  <li>Students can apply for late submission.</li>
+  <li>Students can participate in online class.</li>
+  <li>Students can check exam dates and upcoming events on calender</li>
+   <li>Students will be able to see their current standing on each class. They can check their grades and marks</li>
+   <li>They can search past notices and/or other announcements through voice search</li>
+</ul>
+</p>
+            </div>
+            
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row ">
+            <div class="resume-content mr-auto mb-5">
+              <h3 class="mb-0">User Classes and Characteristics</h3>
+              
+              <p>There will be 2 types of users Admin and general user</p>
+              <p><strong>Admin</strong></p>
+              <p>There will be 2 types of users Admin and general user</p>
+              <p><strong>User</strong></p>
+              <p>General users are mainly Teachers and Students. They can do their specified actions</p>
+            </div>
+            
+          </div>
+            
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto mb-5">
+              <h3 class="mb-0">Operating Environment</h3><br>
+              <p>Operating environment is as listed below:</p>
+              <ul>
+                
+                <li>Distributed database</li>
+                <li>Client/server system</li>
+                <li>Operating system: Any, it will be a web based application, so will be able to run on any operating system</li>
+                <li>Database: MYSQL database</li>
+                <li>Platform: PHP, JavaScript, JQuery </li>
+              </ul>
+
+           </div>
+            
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto mb-5">
+              <h3 class="mb-0">Design and Implementation Constraints</h3><br>
+              <p>User should have internet connection. Without an internet connection, the users cannot log in to the system. So, they cannot interact with the system without internet.</p>
+              <p>Another constraint is data capacity. As we are not using our own data center, we are might face issue with capacity.</p>
+              
+           </div>
+            
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto mb-5">
+              <h3 class="mb-0">User Documentation</h3><br>
+              <p>The system will provide a user manual along with the software and there will be a disk which contains video tutorial.</p>
+              
+           </div>
+         </div>
+       </div>
+
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="Requirements">
+        <div class="my-auto">
+          <h2 class="mb-5">External Interface Requirements</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto mb-5">
+              <h3 class="mb-0">User Interfaces</h3><br>
+              <p>The website will have a straightforward and a clean look which easy to navigate. At first sight, a user will feel everything in the website is well organized and easy to explore. There will be two separate User Interfaces. One for the teacher while other for the student.</p>
+              <p>There will be graphical user interface (GUI) which will allow the users to provide feedback. The teachers can post grades here on real time and system will make a statistical standing and keep it updated. Errors will be displayed if user give wrong inputs. There will also be a help button which when the user presses will show information to the user about the page content and this button will appear on every page.</p>
+              <p>There will be graphical user interface (GUI) which will allow the users to provide feedback. The teachers can post grades here on real time and system will make a statistical standing and keep it updated. Errors will be displayed if user give wrong inputs. There will also be a help button which when the user presses will show information to the user about the page content and this button will appear on every page.</p>
+              <p>Frontend Software: HTML, CSS and Bootstrap</p>
+              <p>Backend Software: PHP, Codeigniter Framework, JavaScript, JQuery & MySQL</p>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto mb-5">
+              <h3 class="mb-0">Hardware Interfaces</h3><br>
+              <p>Any Device that is able to run a web browser which has the ability to process above mentioned Front end software and also the device has to meet the requirements of the browser to run without lagging.</p>
+              
+           </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto mb-5">
+              <h3 class="mb-0"> Software Interfaces</h3><br>
+              <p>Mentioned below are the software required for the website:</p>
+              <table>
+  <tr>
+    <th>Software used</th>
+    <th>Version</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Operating System</td>
+    <td>Any</td>
+    <td>This is a website, a browser based system, so any OS that can run a browser will be able to run it.</td>
+  </tr>
+  <tr>
+    <td>Database</td>
+    <td>My SQL</td>
+    <td>To save records including classes, student?s results, attendance, etc.</td>
+  </tr> 
+</table>
+           </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto mb-5">
+              <h3 class="mb-0">Communications Interfaces</h3><br>
+              <p>A user friendly and simple interface, this project will support majority of web browsers including the popular ones, Google Chrome, Mozilla Firefox and Safari.</p>
+              
+           </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      
+
+
+
+
+
+
+
+
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="Features">
+        <div class="my-auto">
+          <h2 class="mb-5">System Features</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto mb-5">
+              <h3 class="mb-0">Class creation and enrolling</h3>
+              <br><br>
+
+              <h4>Description and Priority</h4>
+              
+              <p>Teacher create classes and with a verified way student will enroll them in this classes</p>
+              <p><strong>Priority: </strong>High</p>
+
+              <h4>Response Sequences</h4>
+              <p>Teacher will have a class creation option, after clicking on it system will provide him a class creation page, after giving all the requirement given in that page teacher will go for creation class option. After verification system provide to teacher a classroom where he can add student</p>
+
+              <h4>Functional Requirements</h4>
+              <ul>
+                <li>REQ 1-The funtioning device should have active internet connection.</li>
+                <li>REQ 2-The funtioning device should have keyboard, mouse and other supporting hardwares</li>
+                <li>REQ 3-The funtioning device should be able to browse internet through browsers.</li>
+              </ul>
+              <p>In exception cases system should show relevant error message</p>
+
+
+              <br><br>
+
+              <h3 class="mb-0">Live video class</h3>
+              <br><br>
+
+              <h4>Description and Priority</h4>
+              
+              <p>Student can attend in live classes thorough video streaming</p>
+              <p><strong>Priority: </strong>High</p>
+
+              <h4>Response Sequences</h4>
+              <p>Teacher will the system for a live class timing and system will notify the students and will automatically take the attendance of the students if they join in the class by the first five minutes and stay till end of the class.</p>
+
+              <h4>Functional Requirements</h4>
+              <ul>
+                <li>REQ 1-The funtioning device should have active internet connection.</li>
+                <li>REQ 2-The funtioning device should have keyboard, mouse and other supporting hardwares</li>
+                <li>REQ 3-The funtioning device should be able to browse internet through browsers.</li>
+                <li>REQ 4-The funtioning device should have an active webcam.</li>
+              </ul>
+              <p>In exception cases system should show relevant error message</p>
+
+              <br><br>
+
+              <h3 class="mb-0">Q&A Platform</h3>
+              
+              <p>Anyone can post here to solve their queries and anybody can reply regarding the queries</p>
+              <p><strong>Priority: </strong>High</p>
+
+              <h4>Response Sequences</h4>
+              <p>System places the questions and notifies the user who posted the question when answered by another user.</p>
+
+              <h4>Functional Requirements</h4>
+              <ul>
+                <li>REQ 1-The funtioning device should have active internet connection.</li>
+                <li>REQ 2-The funtioning device should have keyboard, mouse and other supporting hardwares</li>
+                <li>REQ 3-The funtioning device should be able to browse internet through browsers.</li>
+              </ul>
+              <p>In exception cases system should show relevant error message</p>
+
+
+              <br><br>
+
+
+
+              <h3 class="mb-0">Posting and submitting assignments</h3>
+              
+              <p>Teacher can post assignment along with a deadline and student can submit theirs assignment during deadline, s/he can’t submit after the deadline</p>
+              <p><strong>Priority: </strong>High</p>
+
+              <h4>Response Sequences</h4>
+              <p>System notifies the students when the teacher posts an assignment and also notifies teacher when the assignment has been submitted by a student.</p>
+
+              <h4>Functional Requirements</h4>
+              <ul>
+                <li>REQ 1-The funtioning device should have active internet connection.</li>
+                <li>REQ 2-The funtioning device should have keyboard, mouse and other supporting hardwares</li>
+                <li>REQ 3-The funtioning device should be able to browse internet through browsers.</li>
+              </ul>
+              <p>In exception cases system should show relevant error message</p>
+
+
+              <br><br>
+
+
+
+              
+              <h3 class="mb-0">Live standing</h3>
+              
+              <p>Students can see their grades and can also see all of their marks (homework, assignments &exams, etc.) respectively</p>
+              <p><strong>Priority: </strong>Medium</p>
+
+              <h4>Response Sequences</h4>
+              <p>System automatically updates the student standing statistically when the teacher post marks and with respect to the attendance weighted marks.</p>
+
+              <h4>Functional Requirements</h4>
+              <ul>
+                <li>REQ 1-The funtioning device should have active internet connection.</li>
+                <li>REQ 2-The funtioning device should have keyboard, mouse and other supporting hardwares</li>
+                <li>REQ 3-The funtioning device should be able to browse internet through browsers.</li>
+              </ul>
+              <p>In exception cases system should show relevant error message</p>
+
+
+              <br><br>
+
+              <h3 class="mb-0">Online attendance</h3>
+              
+              <p>Students attendance submit through online using AI systems, there is no need to take any manual attendance</p>
+              <p><strong>Priority: </strong>High</p>
+
+              <h4>Response Sequences</h4>
+              <p>Teacher can manually input the attendance of the students into the system and system will keep the record of each individual student for that course in the database.</p>
+
+              <h4>Functional Requirements</h4>
+              <ul>
+                <li>REQ 1-The funtioning device should have active internet connection.</li>
+                <li>REQ 2-The funtioning device should have keyboard, mouse and other supporting hardwares</li>
+                <li>REQ 3-The funtioning device should be able to browse internet through browsers.</li>
+              </ul>
+              <p>In exception cases system should show relevant error message</p>
+
+
+              <br><br>
+
+
+
+              <h3 class="mb-0">Voice search</h3>
+              
+              <p>Students and teachers can search their queries using voice search option</p>
+              <p><strong>Priority: </strong>Medium</p>
+
+              <h4>Response Sequences</h4>
+              <p>User can click on a coice search option and can record their voice. System will recognize their voice and parse it to intended queries to search</p>
+
+              <h4>Functional Requirements</h4>
+              <ul>
+                <li>REQ 1-The funtioning device should have active internet connection.</li>
+                <li>REQ 2-The funtioning device should have keyboard, mouse and other supporting hardwares</li>
+                <li>REQ 3-The funtioning device should be able to browse internet through browsers.</li>
+                <li>REQ 4-The funtioning device should have an active active microphone to record voice.</li>
+              </ul>
+              <p>In exception cases system should show relevant error message</p>
+
+
+              <br><br>
+
+
+
+
+            </div>
+            
+          </div>
+
+
+      <hr class="m-0">
+
+
+
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="Non-functional">
+        <div class="my-auto">
+          <h2 >Other Non-functional Requirements</h2>
+              <p>Here, we specify some non-functional constraints that the website satisfies in order to be more concrete and stable.</p><br><br>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto mb-5">
+              <h3 class="mb-2">Performance Requirements</h3>
+                            
+              <p>Registration: The website will require teachers and students to register online. They will have to submit certain credentials and will be verified once confirmed. Similar verification will be done when a student is assigned to a certain class.</p>
+              <p>Information: Student information from registration will be forwarded to the teacher and admin.</p>
+              <p>Live Class: Online Class interaction timing will depend on the internet connectivity and the speed. Probable chances of buffer/delay if internet speed is detected comparatively slower than usual.</p>
+
+
+              <h3 class="mb-2"> Safety Requirements</h3>
+                            
+              <p>In case of a server breakdown, the last checkpoint will be saved automatically.</p>
+
+              <h3 class="mb-2"> Security Requirements</h3>
+                            
+              <p>Every user of the website must log in in order to take part, and actions of the students will be monitored by the teacher. The files shared by the teacher must be limited to the viewer. Only students will be allowed to view the homeworks and assignments provided by the teacher. However, if the student posts his/her query in the QA platform, everyone will be able to view the post and take necessary measure. In that case, only teachers will be allowed to make any change to that post.</p>
+
+
+              <h3 class="mb-2"> Software Quality Attributes</h3>
+                            
+              <p>We will use PHP in order to avoid our website from crashing. While as, Bootstrap and Codeigniter framework will help us make the project an industry-standard website.</p>
+
+              <h3 class="mb-2"> Business Rules</h3>
+                            
+              <ul>
+                <li>Students cannot change his/her grades/standings/attendance</li>
+                <li>Student won’t be able to change the assignment/homework once submitted</li>
+                <li>Students cannot share files in-between themselves</li>
+                <li>Teacher-student confidentiality can be kept.</li>
+              </ul>
+
+        </div>
+      </section>
+
+
+
+            <hr class="m-0">
+
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="Other">
+        <div class="my-auto">
+          <h2 >Other Requirements</h2>
+              <p>The website will require to follow the legal requirements while being used such as US Digital Millennium Copyright Act. The project is sustainable and can be reused for similar purposes such as for online interaction purposes.</p>
+        </div>
+    </section>
+
+
+    <hr class="m-0">
+
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="Appendix">
+        <div class="my-auto">
+          <h2 >Appendix - A : Glossary</h2>
+              <p>Here are the terminologies used commonly in the SRS:</p>
+              <p>System: A set of things/ happenings that are working together</p>
+              <p>Live: Occurrences in present continuous state</p>
+<br>
+          <h2 >Appendix - B :  Analysis Models</h2>
+              <p>To be added later.</p>
+              <br>
+          <h2 >Appendix - C : To Be Determined List</h2>
+              <p>References for live class sessions are to be determined./p>
+        </div>
+    </section>
+
+<!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+
+  </body>
+
+</html>

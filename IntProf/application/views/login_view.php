@@ -8,7 +8,7 @@
                     <div class="row-fluid table table-custom-1">
                         <div class="col-md-6 text-middle  bg-color text-center">
                             <div class="padding100">
-                                <a href="index.html"><img class="logo" src="images/logo-white.png" alt=""></a>
+                                <a href="index.html"><img class="logo" src=<?php echo base_url("asset/images/logo-white.png")?> alt=""></a>
                             </div>
                         </div>
                         <div class="col-md-6 text-middle">
