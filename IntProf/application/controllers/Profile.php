@@ -24,8 +24,8 @@ class Profile extends CI_Controller {
 			# code...
 			redirect('home');
 		}
-		$data['id']= $_SESSION['id'];
-		$data['first_name']= $_SESSION['first_name']; 	
+			$data['id']= $_SESSION['id'];
+			 $data['first_name']= $_SESSION['first_name']; 	
   			$data['last_name']= $_SESSION['last_name']; 	
   			$data['email']= $_SESSION['email']; 	
 			$data['birth_date']= $_SESSION['birth_date'];		  			

@@ -55,6 +55,12 @@
                     </tbody>
                   </table>
                   <a href="<?php echo site_url("courses")?>" class="btn btn-primary">Ongoing Courses</a>
+                  </li>
+                               <?php  if( isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] == 1){?> 
+                                <button>
+                                    <a href="<?php echo site_url('home/logout')?>">Logout</a>
+                                </button>
+                                <?php } ?>
                   <!-- <a href="<?php //echo site_url("profile")?>" class="btn btn-primary">Change Password</a> -->
                 </div>
               </div>

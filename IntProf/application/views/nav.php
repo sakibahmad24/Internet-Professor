@@ -22,12 +22,12 @@
                             <ul id="mainmenu">
                                 <li><a href=<?php echo site_url("index.php")?>>Home<span></span></a>
                                 </li>
-                                <li><a href=<?php echo site_url("About/load")?>>About<span></span></a>   
+                                <li><a href=<?php echo site_url("page/about")?>>About<span></span></a>   
                                 </li>
                                 <li><a href=<?php echo site_url("Home/registration")?>>Register<span></span></a> </li>
                                 <li><a href=<?php echo site_url("Home/Login")?>>Log In<span></span></a>
                                 </li>
-                                <li><a href=<?php echo site_url("contact.html")?>>Contact<span></span></a>
+                                <li><a href=<?php echo site_url("page/contact")?>>Contact<span></span></a>
                                 </li>
                                <?php  if( isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] == 1){?> 
                                 <li>
