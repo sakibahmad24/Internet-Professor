@@ -33,8 +33,7 @@ class Profile extends CI_Controller {
 			$data['designation']= $_SESSION['designation'];
 			$data['user_type' ]= $_SESSION['user_type'];
   			$data['contact']= $_SESSION['contact']; 	
-  			$data['username']= $_SESSION['username'];
-  			$data['password']= $_SESSION['password']; 	
+  			$data['username']= $_SESSION['username'];	
 			$data['is_active']= $_SESSION['is_active'];
 
 			$data['view'] = "profile_view"; 

@@ -7,7 +7,7 @@ class Home extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('common');
-		
+        $this->load->library('google');
 	}
 
 	public function index()
@@ -25,16 +25,53 @@ class Home extends CI_Controller {
 	{
 		$data['view'] = "registration_view"; 
 		$this->load->view('template_page',$data);
-		
 	}
 
 	public function login()
 	{
-
 		$data['view'] = "login_view";
+		$data['google_login_url']=$this->google->get_login_url();
 		$this->load->view('template_login',$data);
+	}
+	
+	public function oauth2callback(){
+		$google_data=$this->google->validate();
+	
+		//echo '<pre>'; print_r($google_data); echo '</pre>';
 		
 		
+			$data = array(
+				'email' => $google_data['email'],
+			);
+
+			$result = $this->common->get_user($data);
+
+			if (count($result)>0) {
+				# code...
+				foreach ($result as $key => $value) {
+					# code...
+					$data['id'] = $value['id'];
+					$data['first_name'] = $value['first_name'];
+					$data['last_name'] = $value['last_name'];
+					$data['email'] = $value['email'];
+					$data['birth_date'] = $value['birth_date'];
+					$data['gender'] = $value['gender'];
+					$data['designation'] = $value['designation'];
+					$data['user_type'] = $value['user_type'];
+					$data['contact'] = $value['contact'];
+					$data['username'] = $value['username'];
+					$data['is_active'] = $value['is_active'];
+				}
+				$_SESSION = $data;
+				$_SESSION['loggedIn'] = 1;
+
+				redirect('profile');
+			}
+			else{
+				$this->session->set_flashdata('conf', '<span class="danger">Login Failed! sorry invalid creadiantial</span>');
+				redirect ('Home/login');
+			}
+
 	}
 
 
@@ -130,42 +167,41 @@ class Home extends CI_Controller {
 				'password' => md5($password),
 			);
 
-		$result = $this->common->get_user($data);
+			$result = $this->common->get_user($data);
 
-
-		if (count($result)>0) {
-			# code...
-			foreach ($result as $key => $value) {
+			if (count($result)>0) {
 				# code...
-				$data['id'] = $value['id'];
-				$data['first_name'] = $value['first_name'];
-				$data['last_name'] = $value['last_name'];
-				$data['email'] = $value['email'];
-				$data['birth_date'] = $value['birth_date'];
-				$data['gender'] = $value['gender'];
-				$data['designation'] = $value['designation'];
-				$data['user_type'] = $value['user_type'];
-				$data['contact'] = $value['contact'];
-				$data['username'] = $value['username'];
-				$data['is_active'] = $value['is_active'];
+				foreach ($result as $key => $value) {
+					# code...
+					$data['id'] = $value['id'];
+					$data['first_name'] = $value['first_name'];
+					$data['last_name'] = $value['last_name'];
+					$data['email'] = $value['email'];
+					$data['birth_date'] = $value['birth_date'];
+					$data['gender'] = $value['gender'];
+					$data['designation'] = $value['designation'];
+					$data['user_type'] = $value['user_type'];
+					$data['contact'] = $value['contact'];
+					$data['username'] = $value['username'];
+					$data['is_active'] = $value['is_active'];
+				}
+				$_SESSION = $data;
+				$_SESSION['loggedIn'] = 1;
 
+				redirect('profile');
 			}
-
-			$_SESSION = $data;
-			$_SESSION['loggedIn'] = 1;
-
-			redirect('profile');
-		}
-
-		else{
-			$this->session->set_flashdata('conf', '<span class="danger">Login Failed! Wrong USERNAME/PASSWORD</span>');
-			redirect (site_url());
+			else{
+				$this->session->set_flashdata('conf', '<span class="danger">Login Failed! Wrong USERNAME/PASSWORD</span>');
+				redirect ('Home/login');
 			}
 		}
+		
 	}
 
 	public function logout(){
 		session_destroy();
+		unset($_SESSION['loggedIn']);
+		unset($_SESSION['access_token']);
 		redirect('home');
 	}
 

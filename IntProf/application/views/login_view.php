@@ -40,9 +40,10 @@
                                         <!-- social icons -->
                                         <ul class="list s3">
                                             <li>Or login with:</li>
-                                            <!-- <li><a href="#">Facebook</a></li>
-                                            <li><a href="#">Google</a></li>
-                                            <li><a href="#">Instagram</a></li> -->
+                                            
+                                            <li><a href="<?=$google_login_url?>">Google</a></li>
+                                           
+										
                                         </ul>
                                         <!-- social icons close -->
 
@@ -53,8 +54,7 @@
                                 </form>
 
                                 <br><br><br>
-                                <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
-
+                                
 
                             </div>
                         </div>
