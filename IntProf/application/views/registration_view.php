@@ -49,13 +49,13 @@
                 <label for=""> Birth Date</label>
                 <div style="margin-bottom: 35px" class="row">
                     <div class="col-xs-4 col-md-1">
-                        <input class="form-control" name="day" placeholder="DD" type="text"
+                        <input style="padding: 4px 4px" class="form-control" name="day" placeholder="DD" type="text"
                         required autofocus />
 
                     </div>
                     <div class="col-xs-4 col-md-1">
 
-                        <input class="form-control" name="month" placeholder="MM" type="text"
+                        <input style="padding: 4px 4px" class="form-control" name="month" placeholder="MM" type="text"
                         required autofocus />
                     </div>
                     <div class="col-xs-4 col-md-2">
