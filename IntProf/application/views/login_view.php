@@ -22,8 +22,8 @@
                                         <input type='text' name='username' id='name' class="form-control" placeholder="Username">
                                     </div>
 
-                                   <div class="field-set">
-                                        <input type='text' name='password' id='password' class="form-control" placeholder="Password">
+                                   <div style="padding-bottom: 20px" class="field-set">
+                                        <input type='password' name='password' id='password' class="form-control" placeholder="Password">
                                     </div>
 
 

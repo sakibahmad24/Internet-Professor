@@ -22,8 +22,14 @@ class Courses extends CI_Controller {
 			$data['courses'] = $result;
 		}
 
-		$data['view'] = "course_view";
-		$this->load->view('template',$data);
+		
+			$data['first_name']= $_SESSION['first_name']; 	
+  			$data['last_name']= $_SESSION['last_name']; 	
+  			$data['email']= $_SESSION['email']; 	
+			
+
+			$data['view'] = "course_view"; 
+			$this->load->view('backend_template',$data);
 	}
 
 	public function addCourseByTeacher(){

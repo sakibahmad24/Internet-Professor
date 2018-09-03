@@ -7,7 +7,7 @@
                 </div>
                 <ul class="nav" id="side-menu">
                     <li style="padding: 70px 0 0;">
-                        <a href="#" class="waves-effect"><i class="fa fa-user fa-fw" aria-hidden="true"></i>Profile</a>
+                        <a href="Profile" class="waves-effect"><i class="fa fa-user fa-fw" aria-hidden="true"></i>Profile</a>
                     </li>
                     <li>
                         <a href=<?php echo site_url("courses")?> class="waves-effect"><i class="fa fa-table fa-fw" aria-hidden="true"></i>Ongoing Courses </a>
